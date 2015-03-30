@@ -33,34 +33,44 @@
 
 		  <!-- Any section element inside of this container is displayed as a slide -->
 		  <div class="slides">
-		    <section>
-		      <h2>BIC Infrastructure Software</h2>
-		      <h4> LORIS, CBRAIN, and More...</h4>
-		      <table class="reveal">
-                        <tr>
-                          <td width="50%" style="vertical-align: middle">
-                            <p><font color='yellow'> Dr. William Feindel<br> Lecture Series</font></p>
+		    <section> 
+		      <section>
+			<h2>BIC Infrastructure Software</h2>
+			<h4> LORIS, CBRAIN, and More...</h4>
+			<table class="reveal">
+                          <tr>
+                            <td width="50%" style="vertical-align: middle">
+                              <p><font color='yellow'> Dr. William Feindel<br> Lecture Series</font></p>
+			      
+			      <p><small>March 30, 2015<br>
+				  Samir Das - Software Manager</small></p>                                           
+			    </td>
 			    
-			    <p><small>March 30, 2015<br>
-				Samir Das - Software Manager</small></p>                                           
-			  </td>
-			  
-                          <td>
-                            <img src="images/Feindel.png">
-                      </td></tr></table>
+                            <td>
+                              <img src="images/Feindel.png">
+			</td></tr></table>
+		      </section>
+		      
+		      <section>
+			<h2>12 Years at the MNI</h2>
+                        <img src="images/.png">
+                      </section>
 		    </section>
-
+		    
 		    <section id="fragments">
 			 <h2><font color="blue">From Acquisition to Analysis</font></h2>
 			 <p>
 			   <span class="fragment">Data acquisition, </span>
 			   <span class="fragment">Transfer, </span>
+			   <span class="fragment">Anonimyzation, </span>
+			   <span class="fragment">Security and Privacy, </span>
 			   <span class="fragment">Validation, </span>
 			   <span class="fragment">Preprocessing, </span>
 			   <span class="fragment">Storage, </span>
 			   <span class="fragment">Data management, </span>
 			   <span class="fragment">Quality control, </span>
 			   <span class="fragment">Data sharing, </span>
+			   <span class="fragment">Download, </span>
 			   <span class="fragment">Image processing, </span>
                            <span class="fragment">Statistical analysis </span>
 			   <span class="fragment">...and Paper writing! </span>
@@ -200,7 +210,11 @@
 -->
 		      
 		      <section data-background-video="images/Bigbrain_low.mp4" data-background-color="#000000">
-			<p class="fragment current-visible"><font size="9" color="black">BigBrain</font></p>
+			<p class="fragment current-visible"><font size="9" color="black">BigBrain - high resolution reference brain</font></p>
+			<p class="fragment current-visible"><font size="9" color="black"> multimodal integration into an anatomically realistic standard space</font></p>
+			<p class="fragment current-visible"><font size="9" color="black">Years of development</font></p>
+			<p class="fragment current-visible"><font size="9" color="black">20 micron resolution</font></p>
+			<p class="fragment current-visible"><font size="9" color="black">7404 histological slices</font></p>
 			<p class="fragment current-visible"><font size="9" color="black">1 Terabyte dataset</font></p>
 			<p class="fragment current-visible"><font size="9" color="black">Available freely at https://bigbrain.loris.ca</font></p>	
 			
@@ -361,9 +375,10 @@
                       </section>
 		      <section>
 		        <h2>LORIS - <font color="blue"> Links</font></h2>
-			<p>Website: <font color="blue"> www.loris.ca</font></p>
-			<p>LORIS developers mailing list: <font color="blue"> loris-dev@bic.mni.mcgill.ca</font></p>
-			<p>Source code:<font color="blue">  https://github.com/aces/Loris</font></p>
+			<p>Website: <a href="http:www.loris.ca" target="_blank"> www.loris.ca</a></p>
+			<p>Demo: <a href="https://demo.loris.ca" target="_blank"> https://demo.loris.ca</a></p>
+			<p>LORIS developers mailing list: <a href="mailto:loris-dev@bic.mni.mcgill.ca"> loris-dev@bic.mni.mcgill.ca</a></p>
+			<p>Source code: <a href="https://github.com/aces/Loris" target="_blank"> https://github.com/aces/Loris</a></p>
 			  
 			
                       </section>
@@ -386,40 +401,22 @@
 		      </section>
 		      <section>
 		      <h2>CBRAIN functionality</h2>
-		      <p class="fragment roll-in">Allows users to easily leverage Compute Canada sites without expert knowledge</p>
-		      <p class="fragment roll-in">Many structural MRI tools and some functional integrated, always integrating new tools as per community needs</p>
-		      	<p class="fragment roll-in">Anyone can request an account (best effort support): <a href="mailto:cbrain-support.mni@mcgill.ca">cbrain-support.mni@mcgill.ca</a> </p>
-		      <p class="fragment roll-in">CBRAIN code is now public: <a href="https://github.com/aces/cbrain">https://github.com/aces/cbrain</a> </p>
+		      <p class="fragment roll-in">Non-expert users can easily leverage Compute Canada</p>
+		      	<p class="fragment roll-in">Anyone can request an account (best effort support):<br> <a href="mailto:cbrain-support.mni@mcgill.ca">cbrain-support.mni@mcgill.ca</a> </p>
+		      <p class="fragment roll-in">CBRAIN code is now public: <a href="https://github.com/aces/cbrain" target="blank">https://github.com/aces/cbrain</a> </p>
+		      <p class="fragment roll-in">Includes several structural and functional MRI tools</p>
+		      <p class="fragment roll-in">Continued integration of new tools as per community needs</p>
+
+		      
 		      </section>
-		      <section>
-			<h2>CBRAIN portal</h2>
-			<img src="images/CBRAIN_portal.png">						
-		      </section>
-		      <section>
-                        <h2>CBRAIN projects</h2>
-			<img src="images/CBRAIN_mainpage.png">
-                      </section>
-		      <section>
-                        <h2>CBRAIN tasks</h2>
-                        <img src="images/CBRAIN_tasks.png">
-                      </section>
-		      <section>
-                        <img src="images/CBRAIN_schema.png">
-                      </section>
-		        <section>
-			<img src="images/CBRAIN_distribution.png">
-		      </section>
-		      <section>
-                      	<img src="images/CBRAIN_hours.png">
-		      </section>
+		     
 		      <section>
                          <h2>CBRAIN - Tools</h2>
-			 <p align="left"><font color="blue"> Conversion tools:</font> minc &harr; niftii, dcm &rarr; minc, dcm &rarr; niftii, analyse &rarr;  hrrt, asipro &rarr; minc, dcm &rarr; hrrt, minc1 &harr; minc2</p>
-			 <p align="left"align="left"><font color="blue">Image Processing tools:</font>
+			 <p align="left"><font color="yellow"> Conversion tools:</font></p>
+			  <p align="left">MINC &harr; NIfTI, DICOM &rarr; MINC, DICOM &rarr; NIfTI, Analyze &rarr;  HRRT, ASPIRO &rarr; MINC, DICOM &rarr; HRRT, MINC1 &harr; MINC2</p>
+			 <p align="left"align="left"><font color="yellow">Image Processing tools:</font>
 			   <ul>
-			   <li> Civet</li>
-			   <li> CivetCombiner </li>
-			   <li> CivetQC</li>
+			   <li> Civet, CivetCombiner & CivetQC</li>
 			   <li> FSL: bedpostx, bet, fast, feat, first flirt, melodic, probtrackx</li>
 			   <li> FreeSurfer: recon-all, and recon-all longitudinal</li>
 			   <li> NIAK</li>
@@ -439,7 +436,7 @@
                             <td width="50%" style="vertical-align: top">
                               <p class="fragment roll-in"><font color="blue">Number of users</font></p>
 			      <p class="fragment roll-in"><font color="blue">Soon to be published</p>
-			      <p class="fragment roll-in"><font color="blue">In active developement</p>
+			      <p class="fragment roll-in"><font color="blue">In active development</p>
 			      <p class="fragment roll-in"><font color="blue">More?</p>
 			      <p class="fragment roll-in"><font color="blue">One More?</p>
                             </td>
@@ -482,8 +479,29 @@
                             </td>
                         </tr></table>
                       </section>
-                    </section>
 
+		     <section>
+			<h2>CBRAIN portal</h2>
+			<img src="images/CBRAIN_portal.png">						
+		      </section>
+		      <section>
+                        <h2>CBRAIN projects</h2>
+			<img src="images/CBRAIN_mainpage.png">
+                      </section>
+		      <section>
+                        <h2>CBRAIN tasks</h2>
+                        <img src="images/CBRAIN_tasks.png">
+                      </section>
+		      <section>
+                        <img src="images/CBRAIN_schema.png">
+                      </section>
+		        <section>
+			<img src="images/CBRAIN_distribution.png">
+		      </section>
+		      <section>
+                      	<img src="images/CBRAIN_hours.png">
+		      </section>
+		    </section>
 		    <!-- MINC -->
                     <section>
                       <section>
@@ -494,7 +512,7 @@
                               <img src="images/MINC.png">
                             </td>
                             <td width="40%" style="vertical-align: middle">
-                           <p><small>The MINC file format and toolbox was originally conceived, written and released by Peter Neelin in 1992 due to the frustrations of dealing with multiple file formats from varying scanners and research groups.</small></p>
+                              <p><small>The MINC file format and toolbox was originally conceived, written and released by Peter Neelin in 1992 due to the frustrations of dealing with multiple file formats from varying scanners and research groups.</small></p>			  
                             </td>
                         </tr></table>
                       </section>
@@ -513,8 +531,8 @@
 		    <section data-transition="slide" data-background="#87CEEB" data-background-transition="zoom">
 		      <img src="images/Royal_vic.png">
 			<h3>Acknowledgments</h3>
-			<p><small><font color="black">Alan Evans, Alex Zijdendbos, Reza Adalat, Penelope Kostopoulos, Louis Collins, Vladimir Fonov, Marc Rousseau, Tarek Sherif, Pierre Rioux, Nic Kassis, Leigh MacIntyre, Claude Lepage, Carolina Makowski, Natasha Beck, Tristan Glatard</font></small></p>
-			<p><small> <font color="white">LORIS Developers: </font><font color="black"> Dario Vins, Jonathan Harlap, Matt Charlet, Andrew Corderey, Sebastien Muehlboeck, David Brownlee, Zia Mohaddes, David MacFarlane, Cecile Madjar, Mia Petkova, Christine Rogers, Justin Kat, Nicolas Brossard, Tara Campbell, Jordan Stirling, Daniel Kroetz, Ted Strauss, Young-vin Nah, </font></small> </p>
+			<p><small><font color="black">Alan Evans, Alex Zijdendbos, Reza Adalat, Penelope Kostopoulos, Louis Collins, Vladimir Fonov, Marc Rousseau, Tarek Sherif, Pierre Rioux, Nic Kassis, Leigh MacIntyre, Claude Lepage, Carolina Makowski, Natasha Beck, Tristan Glatard, Bert Vincent</font></small></p>
+			<p><small> <font color="white">LORIS Developers: </font><font color="black"> Dario Vins, Jonathan Harlap, Matt Charlet, Andrew Corderey, Sebastien Muehlboeck, David Brownlee, Zia Mohaddes, David MacFarlane, Cecile Madjar, Mia Petkova, Christine Rogers, Justin Kat, Nicolas Brossard, Tara Campbell, Jordan Stirling, Daniel Kroetz, Ted Strauss, Young-vin Nah</font></small> </p>
                       </section>
 		     </section>
 
