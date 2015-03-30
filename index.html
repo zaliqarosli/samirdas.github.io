@@ -6,14 +6,7 @@
 
 		<title>LORIS - A Database System</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
+	
 		<!-- The important Javascript libraries -->
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
@@ -36,520 +29,545 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h2>BIC Infrastructure Software</h2>
-					<h4> LORIS, CBRAIN, and More...</h4>
-					<table class="reveal">
-                                          <tr>
-                                            <td width="50%" style="vertical-align: middle">
-                                              <p><font color='yellow'> Dr. William Feindel<br> Lecture Series</font></p>
-					      
-					      <p><small>March 30, 2015<br>
-						  Samir Das - Software Manager</small></p>                                           
-					    </td>
+		  <!-- Any section element inside of this container is displayed as a slide -->
+		  <div class="slides">
+		    <section>
+		      <h2>BIC Infrastructure Software</h2>
+		      <h4> LORIS, CBRAIN, and More...</h4>
+		      <table class="reveal">
+                        <tr>
+                          <td width="50%" style="vertical-align: middle">
+                            <p><font color='yellow'> Dr. William Feindel<br> Lecture Series</font></p>
+			    
+			    <p><small>March 30, 2015<br>
+				Samir Das - Software Manager</small></p>                                           
+			  </td>
+			  
+                          <td>
+                            <img src="images/Feindel.png">
+                      </td></tr></table>
+		    </section>
 
-                                            <td>
-                                              <img src="images/Feindel.png">
-                                        </td></tr></table>
-					
-                                        
+		    <section id="fragments">
+			 <h2><font color="blue">From Acquisition to Analysis</font></h2>
+			 <p>
+			   <span class="fragment">Data acquisition, </span>
+			   <span class="fragment">Transfer, </span>
+			   <span class="fragment">Validation, </span>
+			   <span class="fragment">Preprocessing, </span>
+			   <span class="fragment">Storage, </span>
+			   <span class="fragment">Data management, </span>
+			   <span class="fragment">Quality control, </span>
+			   <span class="fragment">Data sharing, </span>
+			   <span class="fragment">Image processing, </span>
+                           <span class="fragment">Statistical analysis </span>
+			   <span class="fragment">...and Paper writing! </span>
+			 </p>
 
-				</section>
+			  <p><b><font color="blue"><span class="fragment">LORIS </span></font>
+			  <font color="green"><span class="fragment">CBRAIN </span></font></b>
+			  <font color="yellow"><span class="fragment">and more... </span></font>
+			 </p>
+			 
+			  <!--Notes-->
+			 <aside class="notes">
+			 </aside>
+		       </section>
+		    
+              	    <section>		    
+		      <section>
+			<h2>BIC Imaging Database</h2>
+                        <td>
+                          <img src="images/BIC_Imaging_DB.png">
+                        </td>
+                      </section>
+		      
+		      <section>	
+			<h2>BIC Clinical Database</h2>
+			<img src="images/Tara.jpg">
+                      </section>
+		    </section>
+		    
+		    <section>
+		      <h2>What is LORIS?</h2>
+		      <table class="reveal">
+			<tr>
+			  <td width="50%" style="vertical-align: middle">
+			    <img src="images/LORIS_logo.png">					   
+			    <p><small> “LORIS is a modular and extensible web-based data management system that integrates all aspects of a multi-center study: from heterogeneous data acquisition (imaging, clinical, behavior, genetics) to storage, processing and ultimately dissemination.”</small></p>
+			  </td>
+			  <td>
+			    <img src="images/LORIS_paper.png"> 
+		      </td></tr></table>	
+		    </section>
+		    
+		    <section>
+		      <section>
+			<h2>What does LORIS do?</h2>
+		        <img src="images/LORIS_functionality.png"> 
+                      </section>
+		      
+		      <section data-background="images/LORIS_full_functionality.png">
+                        <h1><font color="blue">What does LORIS actually do?</font></h1>
+		      </section> 
+		    
+		      <section>
+                        <h2>What can LORIS do for the BIC?</h2>
+                        <img src="images/LORIS_BIC.png">
+                      </section>
+		    </section>
+		     
+		    <section>
+		      <section data-background="images/LORIS_global.png">
+			<h1><font color ="blue">LORIS globally</font></h1>
+		      </section>
+		      
+		      <section>
+                        <img src="images/NIHPD_logo.jpg">
+			<table class="reveal">
+                          <tr>
+			    <td width="45%" style="vertical-align: middle">
+			      <img src="images/NIHPD_paper.png">
+			    </td>
+			    
+                            <td width="30%" style="vertical-align: middle">
+			      <img src="images/MRI_images_several.jpg">
+			    </td>
+			    <td width="30%" style="vertical-align: middle">
+			      <p><small>
+				  <ul>
+				    <li>8 year study</li>
+				    <li>Longitudinal data</li>
+				    <li>532 subjects</li>
+				    <li>8000 distinct variables</li>
+				    <li>37000 individual assessments</li>
+				    <li>T1, T2, PD, DTI</li>
+				    <li>Spectroscopy</li>
+				    <li>∼3TB of imaging data</li>
+				    <li>2000 MRI acquisitions</li>
+				  </ul>
+			      </small></p>
+			    </td>
+			</tr></table>
+		      </section>
+		      
+		      <section>
+                        <img src="images/IBIS.png">
+                        <table class="reveal">
+                          <tr>
+                            <td width="45%" style="vertical-align: middle">
+                              <img src="images/IBIS_paper.png">
+                            </td>
+			    
+                            <td width="30%" style="vertical-align: middle">
+                              <img src="images/IBIS_image.png">
+                            </td>
+                            <td width="30%" style="vertical-align: middle">
+                              <p><small>
+                                  <ul>
+                                    <li>Infant brain development in autism</li>
+                                    <li>3000+ scans</li>
+                                    <li>700+ subjects</li>
+                                    <li>7000 distinct variables</li>
+                                    <li>150,000+ individual assessments</li>
+                                    <li>T1, T2, DTI, BOLD</li>
+                                    <li>∼5 TBs of imaging data</li>
+                                    <li>Genetic/biospecimen data</li>
+				  </ul>
+                              </small></p>
+                            </td>
+                        </tr></table>
+                      </section>
 
-				<section>
+		      
+		      <section>
+                        <table class="reveal">
+			  <h2>BigBrain</h2>
+                          <tr>
+			    <td width="50%" style="vertical-align: middle">
+                              <img src="images/BigBrain.png">
+			    </td>
+			    <td width="50%" style="vertical-align: middle">
+                              <img src="images/BigBrain_paper.png">
+			    </td>
+                        </tr></table>
+                      </section>
+		      
+		      <!--
+		      <section>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nJpFvQ0YZLk" frameborder="0" allowfullscreen></iframe>
+                      </section>
+-->
+		      
+		      <section data-background-video="images/Bigbrain_low.mp4" data-background-color="#000000">
+			<p class="fragment current-visible"><font size="9" color="black">BigBrain</font></p>
+			<p class="fragment current-visible"><font size="9" color="black">1 Terabyte dataset</font></p>
+			<p class="fragment current-visible"><font size="9" color="black">Available freely at https://bigbrain.loris.ca</font></p>	
+			
+		      </section>
+		    </section>
+		    
+		    <!-- LORIS core -->
+		    <section>
+		      <section>
+                        <h2>Login</h2>
+                        <a href="https://demo.loris.ca" target="_blank"><img src="images/LORIS_login.png"></a>
+                      </section>
+		      <section>
+                        <h2>Dashboard</h2>
+			<img src="images/Dashboard.png">
+		      </section>
 
-					<h2>What is LORIS?</h2>
-					<table class="reveal">
-					  <tr>
-					    <td width="50%" style="vertical-align: middle">
-					      <img src="images/LORIS_logo.png">					   
-					      <p><small> “LORIS is a modular and extensible web-based data management system that integrates all aspects of a multi-center study: from heterogeneous data acquisition (imaging, clinical, behavior, genetics) to storage, processing and ultimately dissemination.”</small></p>
-					    </td>
-					    <td>
-					      <img src="images/LORIS_paper.png"> 
-					</td></tr></table>	
-				</section>
-				
-				<section>
-                                        <h2>What does LORIS do?</h2>
-                                        <table class="reveal">
-                                          <tr>
-                                            <td width="50%" style="vertical-align: middle">
-                                              <p><small> “”</small></p>
-                                            </td>
-                                            <td>
-                                              <img src="images/LORIS_paper.png">
-                                        </td></tr></table>
-                                </section>
+		      <section>
+			<h2>Permissions/User control</h2>
+                        <img src="images/Permissions.png">
+                      </section>
 
-				<section>
-				  <section data-background="images/LORIS_global.png">
-				    <h1><font color ="blue">LORIS globally</font></h1>
-				  </section>
+		      <section>
+                        <h2>List of subjects</h2>
+                        <img src="images/Subject_list.png">
+		      </section>
+		      <section>
+			<h2>Timepoints</h2>
+                        <img src="images/Timepoint_list.png">
+                      </section>
+		      <section>
+                        <h2>Battery of Measures</h2>
+			<p><small><font color="yellow">For list of 400+ instruments: https://sites.google.com/site/lorisinstrumentlist</font></small>
+                          <img src="images/Battery.png">
+			</p>
+                      </section>
+		      <section>
+			<h2>Example Psychometric Measure</h2>
+                        <img src="images/AOSI.png">
+                      </section>
+		      <section>
+			<h2>Survey Module</h2>
+                        <img src="images/Survey_module.png">
+                      </section>
 
-				  <section>
-                                        <img src="images/NIHPD_logo.jpg">
-				  <table class="reveal">
-                                    <tr>
-				      <td width="45%" style="vertical-align: middle">
-					<img src="images/NIHPD_paper.png">
-				      </td>
+		    </section>
+		    
+                    <!-- Statistics -->
+		    <section>
+		      <section>
+			<h2>General Statistics</h2>
+			<img src="images/Statistics_general.png">
+		      </section>
+		      <section>
+                        <h2>Behavioural Statistics</h2>
+			<img src="images/Statistics_behavioural.png">
+                      </section>
+		       <section>
+                        <h2>Imaging Statistics</h2>
+			<img src="images/Statistics_imaging.png">
+                      </section>
+		    </section>
+		    
+                    <!-- Imaging Browser -->
+		    <section>
+		      <section>
+			<h2>Imaging Browser</h2>
+			<img src="images/Imaging_menu.png">
+                      </section>
+	
+		      <section>
+                        <h2>Imaging Quality Control</h2>
+                        <img src="images/Imaging_scans.png">
+                      </section>
+		      <section>
+                        <h2>Visualization - <font color="yellow">BrainBrowser</font></h2>
+                        <img src="images/BrainBrowser_VolumeViewer.png">
+		      </section>
+		      <section>
+                        <h3>BrainBrowser - <font color ="green"> 3D Surface Viewer </font></h3>
+			<p><a href="https://brainbrowser.cbrain.mcgill.ca/surface-viewer#ct" target="_blank"><img src="images/BrainBrowser_SurfaceViewer.png"></a></p>
+                      </section>
+		      <section>
+                        <h2><font color ="red">Protocol Violations</font></h2>
+                        <img src="images/Violated_scans.png">
+                      </section>
+		      <section>
+			<table class="reveal">
+                          <h2>Radiological Review Module</h2>
+                          <tr>
+                            <td width="61%" style="vertical-align: middle">
+			      <img src="images/Radiological_review_menu.png">               
+                            </td>
+                            <td width="39%" style="vertical-align: middle">
+                              <img src="images/Radiological_review_form.png">
+                            </td>
+                        </tr></table>
+		      </section>				  
+		      <section>
+                        <h2>DICOM archives</h2>
+                        <img src="images/DICOM_archive.png">
+                      </section>
+		      <section>
+                        <h2>Imaging Uploader -<font color="red"> New</font></h2>
+                        <img src="images/Imaging_uploader.png">
+                      </section>
 
-                                      <td width="30%" style="vertical-align: middle">
-                                        <img src="images/MRI_images_several.jpg">
-				  </td>
-				      <td width="30%" style="vertical-align: middle">
-                                       <p><small>
-					   <ul>
-					     <li>8 year study</li>
-					     <li>3+ visits per subject</li>
-					     <li>Longitudinal data</li>
-					     <li>532 subjects</li>
-					     <li>8000 distinct variables</li>
-					     <li>37000 individual assessments</li>
-					     <li>T1, T2, PD, DTI</li>
-					     <li>Spectroscopy</li>
-					     <li>∼3 TB of imaging data</li>
-					     <li>2000 MRI acquisitions</li>
-					   </ul>
-				       </small></p>
-				      </td>
-				  </tr></table>
-				  </section>
+		    </section>
+		    
+		    <!-- Data Querying Tool -->
+		    <section>
+		      <section>
+			<h2>Data Querying Tool</h2>
+			<img src="images/DQT_Define.png">
+		      </section>
+		      <section>
+                        <h2>Data Querying Tool - <font color="yellow"> Results</font></h2>
+                        <img src="images/DQT_Results.png">
+                      </section>
+		      <section>
+                        <h2>Data Querying Tool - <font color="yellow">Statistics</font></h2>
+                        <img src="images/DQT_Stats.png">
+                      </section>
+		      <section>
+                        <h2>Data Dictionary Builder</h2>
+                        <img src="images/Data_dictionary.png">
+                      </section>
+		    </section>
 
-				  <section>
-                                        <img src="images/IBIS.png">
-                                  <table class="reveal">
-                                    <tr>
-                                      <td width="45%" style="vertical-align: middle">
-                                        <img src="images/IBIS_paper.png">
-                                      </td>
+		    <section>
+		     <section>
+		        <h2>Mobile <font color="yellow"> - Responsive layout</font></h2>
+			<img src="images/Mobile_responsive.png">
+                     </section>
+		      <section>
+		        <h2>Mobile <font color="yellow"> - Data entry</font></h2>
+			<img src="images/Mobile_data_entry.png">
+                      </section>
+		       <section>
+		        <h2>Mobile <font color="yellow"> - Imaging</font></h2>
+			<img src="images/Mobile_imaging.png">
+                      </section>
+		    </section>
+		    
+		    <section>
+		      <section>
+		        <h2>LORIS - Github <font color="yellow"> - Open Source</font></h2>
+			<img src="images/LORIS_Github.png">
+                      </section>
+		      
+		      <section>
+			<h2>LORIS - <font color="yellow">Requirements</font></h2>
+			<p class="fragment grow">Dedicated developer! (software is free of charge)</p>		
+			<p class="fragment roll-in">LINUX based server</p>
+			<p class="fragment roll-in">LAMP stack</p>
+			<p class="fragment roll-in">Perl and other peripheral libraries (i.e DCMTK)</p>
+			<p class="fragment roll-in">Beer for Samir</p>
+                      </section>
+		      <section>
+		        <h2>LORIS - <font color="blue"> Links</font></h2>
+			<p>Website: <font color="blue"> www.loris.ca</font></p>
+			<p>LORIS developers mailing list: <font color="blue"> loris-dev@bic.mni.mcgill.ca</font></p>
+			<p>Source code:<font color="blue">  https://github.com/aces/Loris</font></p>
+			  
+			
+                      </section>
+		      
+		    </section>
 
-                                      <td width="30%" style="vertical-align: middle">
-                                        <img src="images/IBIS_image.png">
-                                  </td>
-                                      <td width="30%" style="vertical-align: middle">
-                                       <p><small>
-                                           <ul>
-                                             <li>Infant brain development in autism</li>
-                                             <li>2000+ scans</li>
-                                             <li>500+ subjects</li>
-                                             <li>6000 distinct variables</li>
-                                             <li>130,000+ individual assessments</li>
-                                             <li>T1, T2, DTI, BOLD</li>
-                                             <li>∼5 TBs of imaging data</li>
-                                           </ul>
-                                       </small></p>
-                                      </td>
-                                  </tr></table>
-                                  </section>
+		    <!-- CBRAIN -->
+		    <section>
+		      <section>
+			<table class="reveal">
+                          <h2>CBRAIN</h2>
+                          <tr>
+                            <td width="50%" style="vertical-align: middle">
+                              <p><small>CBRAIN is a web-based collaborative research platform that offers transparent access to remote data sources, distributed high performance computing sites, and an array of processing and visualization tools within a controlled, secure environment.</small></p>
+                            </td>
+                            <td width="50%" style="vertical-align: middle">
+                              <img src="images/CBRAIN_paper.png">
+                            </td>
+                        </tr></table>
+		      </section>
+		      <section>
+		      <h2>CBRAIN functionality</h2>
+		      <p class="fragment roll-in">Allows users to easily leverage Compute Canada sites without expert knowledge</p>
+		      <p class="fragment roll-in">Many structural MRI tools and some functional integrated, always integrating new tools as per community needs</p>
+		      	<p class="fragment roll-in">Anyone can request an account (best effort support): <a href="mailto:cbrain-support.mni@mcgill.ca">cbrain-support.mni@mcgill.ca</a> </p>
+		      <p class="fragment roll-in">CBRAIN code is now public: <a href="https://github.com/aces/cbrain">https://github.com/aces/cbrain</a> </p>
+		      </section>
+		      <section>
+			<h2>CBRAIN portal</h2>
+			<img src="images/CBRAIN_portal.png">						
+		      </section>
+		      <section>
+                        <h2>CBRAIN projects</h2>
+			<img src="images/CBRAIN_mainpage.png">
+                      </section>
+		      <section>
+                        <h2>CBRAIN tasks</h2>
+                        <img src="images/CBRAIN_tasks.png">
+                      </section>
+		      <section>
+                        <img src="images/CBRAIN_schema.png">
+                      </section>
+		        <section>
+			<img src="images/CBRAIN_distribution.png">
+		      </section>
+		      <section>
+                      	<img src="images/CBRAIN_hours.png">
+		      </section>
+		      <section>
+                        <h2>CBRAIN - Core processing time</h2>
+			<img src="images/CBRAIN_.png">
+                      </section>
+		      <section>
+                         <h2>CBRAIN - Tools</h2>
+			 <p align="left"><font color="blue"> Conversion tools:</font> minc &harr; niftii, dcm &rarr; minc, dcm &rarr; niftii, analyse &rarr;  hrrt, asipro &rarr; minc, dcm &rarr; hrrt, minc1 &harr; minc2</p>
+			 <p align="left"align="left"><font color="blue">Image Processing tools:</font>
+			   <ul>
+			   <li> Civet</li>
+			   <li> CivetCombiner </li>
+			   <li> CivetQC</li>
+			   <li> FSL: bedpostx, bet, fast, feat, first flirt, melodic, probtrackx</li>
+			   <li> FreeSurfer: recon-all, and recon-all longitudinal</li>
+			   <li> NIAK</li>
+			   <li> Several other project specific tools</li>
+			   </ul>
+                       </section>
+		    
+		    <!-- CIVET: Corticometric Iterative Vertex-based Estimations of Topology -->
+                    <section>
+                      <table class="reveal">
+                          <h2>CIVET</h2>
+                          <tr>
+                            <td width="50%" style="vertical-align: middle">
+                              <p><small>The CIVET project was initiated in order to create an automated, easy-to-use human brain-imaging pipeline that makes use of state-of-the-art software tools developed by researchers at the BIC for the fully-automated processing and analysis of large MR data sets, including the extraction and analysis of cortical surfaces from MR images, as well as many other volumetric and corticometric functions.</small></p>
+			      <img src="images/CIVET.png">
+                            </td>
+                            <td width="50%" style="vertical-align: top">
+                              <p class="fragment roll-in"><font color="blue">Number of users</font></p>
+			      <p class="fragment roll-in"><font color="blue">Soon to be published</p>
+			      <p class="fragment roll-in"><font color="blue">In active developement</p>
+			      <p class="fragment roll-in"><font color="blue">More?</p>
+			      <p class="fragment roll-in"><font color="blue">One More?</p>
+                            </td>
+                        </tr></table>
+                      </section>
+		      <section>
+                        <table class="reveal">
+                          <h2>CIVET - Processing steps</h2>
+                          <tr>
+                            <td>
+			      <img src="images/CIVET_processing_steps.png">      
+                            </td>
+                        </tr></table>
+                      </section>
+		     <section>
+                        <table class="reveal">
+                          <h2>CIVET - Pipeline schema</h2>
+                          <tr>
+                            <td>
+			      <img src="images/CIVET_steps.png">      
+                            </td>
+			      <td style="vertical-align: top">
+				<img src="images/CIVET_surface.png">
+				<img src="images/CIVET_segmentation.png">      
+                            </td>
+                        </tr></table>
+                     </section>
+		     
+		    <section>
+                        <h2>fMRI Pipeline - <font color ="red"> NIAK</font></h2>
+			<table class="reveal">
+                          <tr>
+                            <td width="78%" style="vertical-align: middle">
+                              <img src="images/NIAK.jpg">
+			    </td>
+                            <td width="22%" style="vertical-align: middle">
+                              <img src="images/Bellec.png">
+			      <p class="fragment roll-in">My name is Pierre Bellec...</p>
+			      	<p class="fragment roll-in">... and I love fruit!</p>
+                            </td>
+                        </tr></table>
+                      </section>
+                    </section>
 
-				  <section>
-                                    <table class="reveal">
-				      <h2>BigBrain</h2>
-                                      <tr>
-					<td width="50%" style="vertical-align: middle">
-                                          <img src="images/BigBrain.png">
-					</td>
-					<td width="50%" style="vertical-align: middle">
-                                          <img src="images/BigBrain_paper.png">
-					</td>
-                                    </tr></table>
-                                  </section>
-				  <section>
-                                    <h2>BigBrain Video</h2>
-                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/nJpFvQ0YZLk" frameborder="0" allowfullscreen></iframe>
-                                  </section>
-				</section>
+		    <!-- MINC -->
+                    <section>
+                      <section>
+                        <table class="reveal">
+                          <h2>MINC</h2>
+                          <tr>
+                            <td width="50%" style="vertical-align: middle">
+                              <p>What is MINC....</p>
+                              <img src="images/">
+                            </td>
+                            <td width="50%" style="vertical-align: middle">
+                           
+                            </td>
+                        </tr></table>
+                      </section>
 
-				<!-- LORIS core -->
-				<section>
-				  <section>
-                                    <h2>Login</h2>
-                                    <a href="https://demo.loris.ca" target="_blank"><img src="images/LORIS_login.png"></a>
-                                  </section>
-				  <section>
-                                    <h2>Dashboard</h2>
-				    <img src="images/Dashboard.png">
-				  </section>
-				  <section>
-                                    <h2>List of subjects</h2>
-                                    <img src="images/Subject_list.png">
-				  </section>
-				  <section>
-				    <h2>Timepoints</h2>
-                                    <img src="images/Timepoint_list.png">
-                                  </section>
-				  <section>
-                                    <h2>Battery of Measures</h2>
-				    <p><small><font color="yellow">For list of 400+ instruments: https://sites.google.com/site/lorisinstrumentlist</font></small>
-                                      <img src="images/Battery.png">
-				    </p>
-                                  </section>
-				  <section>
-				    <h2>Example Psychometric Measure</h2>
-                                    <img src="images/AOSI.png">
-                                  </section>
-				</section>
+                      <section>
+                        <h2>MINC resources</h2>
+			<ul><small>
+			  <li>minc-users mailing list: <br> <a href="http://www.bic.mni.mcgill.ca/mailman/listinfo/minc-users">http://www.bic.mni.mcgill.ca/mailman/listinfo/minc-users</a></li> <br>
+			  <li>Current documention on wikibooks: <br> <a href="http://en.wikibooks.org/wiki/MINC">http://en.wikibooks.org/wiki/MINC</a></li> <br>
+			  <li>Current combined release:  <br><a href="http://www.bic.mni.mcgill.ca/ServicesSoftware/ServicesSoftwareMincToolKit">http://www.bic.mni.mcgill.ca/ServicesSoftware/ServicesSoftwareMincToolKit</a></li> <br>
+			 <li>Github (for bug report and source code)  <br><a href="https://github.com/BIC-MNI/minc-toolkit/">https://github.com/BIC-MNI/minc-toolkit/</a></li> <br>
+			</small></ul>
+		      </section>
+                    </section>
 
-                                <!-- Statistics -->
-				<section>
-				  <section>
-				    <h2>General Statistics</h2>
-				    <img src="images/Statistics_general.png">
-				  </section>
-				  <section>
-                                    <h2>Behavioural Statistics</h2>
-				    <img src="images/Statistics_behavioural.png">
-                                  </section>
-				</section>
+		    <section data-transition="slide" data-background="#87CEEB" data-background-transition="zoom">
+		      <img src="images/Royal_vic.png">
+			<h3>Acknowledgments</h3>
+			<p><small><font color="black">Alan Evans, Alex Zijdendbos, Reza Adalat, Penelope Kostopoulos, Louis Collins, Vladimir Fonov, Marc Rousseau, Tarek Sherif, Pierre Rioux, Nic Kassis, Leigh MacIntyre, Claude Lepage, Carolina Makowski, Natasha Beck, Tristan Glatard</font></small></p>
+			<p><small> <font color="white">LORIS Developers: </font><font color="black"> Dario Vins, Jonathan Harlap, Matt Charlet, Andrew Corderey, Sebastien Muehlboeck, David Brownlee, Zia Mohaddes, David MacFarlane, Cecile Madjar, Mia Petkova, Christine Rogers, Justin Kat, Nicolas Brossard, Tara Campbell, Jordan Stirling, Daniel Kroetz, Ted Strauss, Young-vin Nah, </font></small> </p>
+                      </section>
+		     </section>
 
-                                <!-- Imaging Browser -->
-				<section>
-				  <section>
-				    <h2>Imaging Browser</h2>
-				    <img src="images/Imaging_menu.png">
-                                  </section>
-				  <section>
-                                    <h2>Images</h2>
-                                    <img src="images/Imaging_form.png">
-                                  </section>
-				  <section>
-                                    <h2>Visualization - BrainBrowser</h2>
-                                    <img src="images/BrainBrowser_VolumeViewer.png">
-				  </section>
-				  <section>
-                                    <h3>BrainBrowser - 3D Surface Viewer</h3>
-				    <p><a href="https://brainbrowser.cbrain.mcgill.ca/surface-viewer#ct"><img src="images/BrainBrowser_SurfaceViewer.png"></a></p>
-                                   
-                                  </section>
-				</section>
-				
-				<!-- Data Querying Tool -->
-				<section>
-				  <section>
-				    <h2>Data Querying Tool</h2>
-				    <img src="images/DQT_Define.png">
-				  </section>
-				  <section>
-                                    <h2>Data Querying Tool - Results</h2>
-                                    <img src="images/DQT_Results.png">
-                                  </section>
-				  <section>
-                                    <h2>Data Querying Tool - Statistics</h2>
-                                    <img src="images/DQT_Stats.png">
-                                  </section>
-				</section>
+<!--
+    <section>
+      <section id="fragments">
+	<h2>Fragments</h2>
+	<p>Hit the next arrow...</p>
+	<p class="fragment">... to step through ...</p>
+	<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+	
+	<aside class="notes">
+	  This slide has fragments which are also stepped through in the notes window.
+	</aside>
+      </section>
+      <section>
+	<h2>Fragment Styles</h2>
+	<p>There's different types of fragments, like:</p>
+	<p class="fragment grow">grow</p>
+	<p class="fragment shrink">shrink</p>
+	<p class="fragment roll-in">roll-in</p>
+	<p class="fragment fade-out">fade-out</p>
+	<p class="fragment current-visible">current-visible</p>
+	<p class="fragment highlight-red">highlight-red</p>
+	<p class="fragment highlight-blue">highlight-blue</p>
+      </section>
+    </section>
+    
+    <section id="transitions">
+      <h2>Transition Styles</h2>
+      <p>
+	You can select from different transitions, like: <br>
+	<a href="?transition=none#/transitions">None</a> -
+	<a href="?transition=fade#/transitions">Fade</a> -
+	<a href="?transition=slide#/transitions">Slide</a> -
+	<a href="?transition=convex#/transitions">Convex</a> -
+	<a href="?transition=concave#/transitions">Concave</a> -
+	<a href="?transition=zoom#/transitions">Zoom</a>
+      </p>
+    </section>
+    
+    -->
 
-				<section>
-                                    <h2>LORIS - Github (Open Source)</h2>
-                                    <img src="images/LORIS_Github.png">
-                                  </section>
+</div>
 
-				<!-- CBRAIN -->
-				<section>
-				  <section>
-				    <table class="reveal">
-                                      <h2>CBRAIN</h2>
-                                      <tr>
-                                        <td width="50%" style="vertical-align: middle">
-                                          <p>What is....</p>
-                                        </td>
-                                        <td width="50%" style="vertical-align: middle">
-                                          <img src="images/CBRAIN_paper.png">
-                                        </td>
-                                    </tr></table>
-				  </section>				  
-				  <section>
-				    <h2>CBRAIN portal</h2>
-				    <img src="images/CBRAIN_portal.png">						
-				  </section>
-				  <section>
-                                    <h2>CBRAIN projects</h2>
-				    <img src="images/CBRAIN_mainpage.png">
-                                  </section>
-				  <section>
-                                    <h2>CBRAIN tasks</h2>
-                                    <img src="images/CBRAIN_tasks.png">
-                                  </section>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-
-			</div>
-
-		</div>
+</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
