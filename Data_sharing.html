@@ -36,168 +36,262 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
+		  
+		  <!-- Any section element inside of this container is displayed as a slide -->
+		  <div class="slides">
+		    
+		    <!-- Data Sharing  -->
+		    <section>
+		      <section>
+			<h2>Data Sharing Initiatives</h2>
+			<table class="reveal">
+			  <tr>
+			    <td width="50%" style="vertical-align: middle">
+			      <p><font color='yellow'>Dr. William Feindel<br>Lecture Series</font></p>
+			      <p><small>May 6, 2016<br>
+				  Samir Das - Software Manager</small></p>
+			    <img src="images/Neuro.png"> 
+			    </td>
+			    <td>
+			      <img src="images/Feindel.png">			  
+			  </td></tr>
+			  <tr>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+			    <td>
+			      <img src="images/MCIN.png">
+			    </td>
+			    <td>
+			      <img src="images/Ludmer.png">
+			    </td>
+			  </tr>
+			</table>
+		      </section>
+		      
+		      <section data-transition="convex">
+                        <img src="images/Spock.png">
+		      </section>
+		    </section>
 
+		    <!-- This talk - Disclaimer-->
+		    <section>
+		      <h2>Today's talk</h2>
+		      <p><font color="red">Disclaimer - MNI-centric solutions</font></p>
+		      <ol>
+			<li>Data Sharing preamble (hurdles, issues, solutions...)</li>
+			<li>Examples of tools, datasets, and environments</li>
+			<li>LORIS and CBRAIN</li>
+			<li>Open Science at the MNI</li>
+		      </ol>
+		    </section>
+		 
+		    <!-- What is Data Sharing? -->
+		    <section data-background="images/Data_sharing_cartoon.png">
+		      <h2><font color="black">What is Data Sharing?</font></h2>
+		      <p class="fragment roll-in"><font color="blue">Exchange of information</font></p>
+		      <p class="fragment roll-in"><font color="black">Datasets</font></p>
+		      <p class="fragment roll-in"><font color="black">Tools</font></p>
+		      <p class="fragment roll-in"><font color="black">Standarization</font></p>
+                      <p class="fragment roll-in"><font color="black">Databases</font></p>
+		      <p class="fragment roll-in"><font color="black">Collaborations</font></p>
+		      <p class="fragment roll-in"><font color="black">Conferences, hackathons</font></p>
+		      <p class="fragment roll-in"><font color="black">Facebook, Google, Twitter, etc.</font></p>
+		      <br>
+		      <p><font size="1" color="black">Image source: http://blog.veritythink.com/post/87880448269/creative-data-sharing-and-open-humanitarianism</font></p>
+		    </section>
+		    
+		    <!-- Why is Data Sharing Important? -->
+		    <section>
+		      <h2><font color="yellow">Why is Data Sharing important?</font></h2>
+		      <p class="fragment roll-in">Because it's the future!</p>
+		      <p class="fragment roll-in">Reduce waste - governments are increasingly invested</p>
+		      <p class="fragment roll-in">Increased exposure of your study</p>
+                      <p class="fragment roll-in">More people analyzing the data</p>
+		      <p class="fragment roll-in">Less attrition of valuable datasets</p>
+		      <p class="fragment roll-in">Access to specific datasets</p>
+		    </section>
+		    
+		    <!-- What are some of the hurdles?  -->
+		    <section>
+		      <h2><font color="yellow">What are some of the hurdles?</font></h2>
+		      <p class="fragment roll-in">Fear protectionism - Avatar analogy</p>
+		      <p class="fragment roll-in">Privacy Concerns</p>
+		      <p class="fragment roll-in">Privacy concerns - talk about Adrian Thorogood's talk</p>
+		      <p class="fragment roll-in">Technical Challenges</p>
+                      <p class="fragment roll-in">Interoperability between systems</p>
+		      <p class="fragment roll-in">Harmonization of data</p>
+		      <p class="fragment roll-in">Reproducibility</p>
+		    </section>
+		    
+		    <!-- What is Data Sharing? -->
+		    <section>
+		      <h2>Best practices in Data Sharing</h2>
+		      <p><small><a href="http://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=1" target="_blank">Committee on Best Practices in Data Analysis and Sharing (COBIDAS)</a></small></p>
+		      <img src="images/COBIDAS.png">
+		    </section>
 
-			  <!-- Data Sharing  -->
-			  <section>
-			    
-			    <section>
-			      <h2>Data Sharing Solutions</h2>
-			      <table class="reveal">
-				<tr>
-				  <td width="50%" style="vertical-align: middle">
-				    <p><font color='yellow'> Dr. William Feindel<br> Lecture Series</font></p>
-				    <p><small>May 6, 2016<br>
-					Samir Das - Software Manager</small></p>
-				  </td>
-				  <td>
-				    <img src="images/Feindel.png">
-			      </td></tr></table>
-			    </section>
-			    
-			    <section data-transition="convex">
-                              <img src="images/Spock.png">
-			    </section>
-			  </section>
-			  
-			  <!-- Today's talk  -->
-			  <section>
-                            <h2><font color="yellow">Today's talk</font></h2>
-                            <p class="fragment roll-in"> 1 - What is data sharing and why is it important?</p>
-                            <p class="fragment roll-in"> 2 - What are some of the hurdles?</p>
-			    <p class="fragment roll-in"> 3 - What are some of the solutions?</p>
-                          </section>
-			  
-			  <!-- What is Data Sharing?  -->
-			  <section>
-			    <h2><font color="yellow">What is Data Sharing</h2>
-			    <table class="reveal">
-			      <tr>
-				<td width="50%" style="vertical-align: middle">
-				  <p><small> “Have a data sharing cartoon. Because it's the future. It'll increase samples sizes and reduce waste. Governments are already very interested because it'll save money, and ultimately save lives. Whole narrative about that.”</small></p>
-				</td>
-				<td>
-				  <img src="images/LORIS_paper.png"> 
-			    </td></tr></table>	
-			  </section>
+		    <!-- Data sharing solutions -->
+		    <section>
+		      <section>
+			<h2>Some Data Sharing solutions?</h2>
+			<img src="images/Solutions.png">
+		      </section>
+		      
+		      <!-- External Initiatives  -->
+		      <section>
+			<h2><font color="yellow">External Initiatives</font></h2>
+			<p>
+			  <span class="fragment"><a href="https://www.incf.org" target="_blank">INCF, </a></span>
+			  <span class="fragment"><a href="https://osf.io" target="_blank">Open Science Framework, </a></span>
+			  <span class="fragment"><a href="https://www.nitrc.org" target="_blank">NITRC, </a></span>
+			  <span class="fragment"><a href="http://alleninstitute.org" target="_blank">Allen Institute, </a></span>
+			  <span class="fragment"><a href="https://ndar.nih.gov" target="_blank">NDAR, </a></span>
+			  <span class="fragment"><a href="https://openfmri.org" target="_blank">Open fMRI, </a></span>
+			  <span class="fragment"><a href="http://www.humanbrainmapping.org" target="_blank">Organization Human Brain Mapping, </a></span>
+			  <span class="fragment"><a href="https://www.humanbrainproject.eu" target="_blank">Human Brain Project, </a></span>
+			  <span class="fragment"><a href="https://www.computecanada.ca" target="_blank">Compute Canada, </a></span>
+			  <span class="fragment"><a href="https://www.maelstrom-research.org" target="_blank">Maelstrom, </a></span>
+			  <span class="fragment"><a href="http://www.ukbiobank.ac.uk" target="_blank">UK Biobank, </a></span>
+			  <span class="fragment"><a href="" target="_blank">Edinburgh, </a></span>
+                          <span class="fragment"><a href="http://www.braininitiative.nih.gov" target="_blank">BRAIN, </a></span>
+			  <span class="fragment"><a href="http://enigma.ini.usc.edu" target="_blank">ENIGMA, </a></span>
+			  <span class="fragment"><a href="http://fcon_1000.projects.nitrc.org/indi/enhanced/" target="_blank">Enhanced Nathan Kline Institute (1000 Functional Connectomes), </a></span>
+			  <span class="fragment"><a href="http://www.loni.usc.edu" target="_blank">LONI, </a></span>
+			  <span class="fragment"><a href="http://www.gaain.org" target="_blank">GAAIN, </a></span>
+			  <span class="fragment"><a href="http://coins.mrn.org" target="_blank">COINS, </a></span>
+			  <span class="fragment"><a href="http://www.xnat.org" target="_blank">XNAT, </a></span>
+			  <span class="fragment"><a href="http://brainspell.org" target="_blank">BrainSpell, </a></span>
+			  <span class="fragment"><a href=" http://www.fil.ion.ucl.ac.uk/spm/" target="_blank">SPM, </a></span>
+			  <span class="fragment"><a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">FSL, </a></span>
+			  <span class="fragment"><a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">FSL, </a></span>
+			  <span class="fragment"><a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">FSL, </a></span>
+			  <span class="fragment"><a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">FSL, </a></span>
+			</p>
+			
+			<p><b><font color="green"><span class="fragment">So </span></font>
+			    <font color="blue"><span class="fragment">many </span></font></b>
+			  <font color="red"><span class="fragment">initiatives! </span></font>
+			</p>
+		      </section>
+		    </section>
+		    
+		    <!-- Not-so-open Datasets -->
+		    <section>
+		      <h2><font color="yellow">Restricted datasets</font></h2>
+		      <p class="fragment roll-in">ADNI</p>
+		      <p class="fragment roll-in">ICBM</p>
+		      <p class="fragment roll-in"></p>
+		      <p class="fragment roll-in">NIHPD</p>
+		      <p class="fragment roll-in">IBIS</p>
+		      <p class="fragment roll-in">Gen-R</p>
+		    </section>
 
-			   <!-- Why is Data Sharing Important?  -->
-			  <section data-transition="concave">
-			    <h2><font color="yellow">Why is data sharing important?</h2>
-			    <p class="fragment roll-in">Increased exposure of your study</p>
-                            <p class="fragment roll-in">More people analyzing the data</p>
-			    <p class="fragment roll-in">Less attrition of valuable datasets</p>
-			    <p class="fragment roll-in">Larger sammple sizes</p>
-			    <p class="fragment roll-in">ccess to specific datasets</p>
-			  </section>
-			  
-			  <!-- What are some of the hurdles?  -->
-			  <section>
-			    <h2><font color="yellow">What are some of the hurdles?</h2>
-			    <p>Fear! Protectionism.</p>
-			    <p>Privacy concerns - talk about Adrian Throrogood's points</p>
-			    <p>Technical challenges</p>
-			    <p>Interoperability between systems</p>
-			    <p>Harmonization of data</p>
-			  </section>
-			  
-			  <!-- Data sharing solutions -->
-			  <section>
-			    <h2>What are some of the solutions?</h2>
-			    <table class="reveal">
-			      <tr>
-				<td width="50%" style="vertical-align: middle">
-				  <p><small> “Because it's the future. It'll increase samples sizes and reduce waste. Governments are already very interested because it'll save money, and ultimately save lives. Whole narrative about that.”</small></p>
-				</td>
-				<td>
-				  <img src="images/LORIS_paper.png"> 
-			    </td></tr></table>	
-			  </section>
-			  
-			  <!-- External Global Initiatives  -->
-			  <section>
-			    <section>
-                              <h2><font color="yellow">External Initiatives</h2>
-			    </section>
-			    
-			    <section>
-                              <h2><font color="yellow">Datasets</h2>
-			      ABIDE, ADHD 200, ICBM, 1000 functional connectomes, HCP, NIHPD, IBIS, FBIRN? HID, 
-                            </section>
+		     <!-- ADNI -->
+		    <section>
+		      <h2><font color="yellow">ADNI</font></h2>
+		      
+		    </section>
 
-			      <section>
-				<h2><font color="yellow">Atlases</h2>
-				Colin27, Russ Polldrack, 99 phantoms, BigBrain, Working group for atlas building INCF
-                              </section>
-			      
-			      <section>
-				<h2><font color="yellow">Tools</h2>
-				
-				BIDS
-				NIDM
-				What else?
-				ITK
-				Mobile MRI (Cameron)/ EEG camps
-				
-				Neurovault
-				Neurosynth
-			      </section>
-			      
-			      <section>
-				Other environments:
-				CIVET
-				Boutiques
-				NiPype (Satra)- Data processing tools Boutiques
-				Github - annex
-                              </section>
-			  </section>
+		    <!-- NIHPD -->
+		    <section>
+		      <img src="images/NIHPD_logo.jpg">
+		      <table class="reveal">
+			<tr>
+			  <td width="45%" style="vertical-align: middle">
+			    <img src="images/NIHPD_paper.png">
+			  </td>
 			  
-			  <section>
-                            <h2><font color="yellow">Local Initiatives</h2>
-			    LORIS, CBRAIN, BIGBRAIN, OMEGA
+			  <td width="30%" style="vertical-align: middle">
+			    <img src="images/MRI_images_several.jpg">
+			  </td>
+			  <td width="30%" style="vertical-align: middle">
+			    <p><small>
+				<ul>
+				  <li>Control data for NDAR</li>
+				  <li>8 year study - longituindal data</li>
+				  <li>532 subjects</li>
+				  <li>8000 distinct variables</li>
+				  <li>37000 individual assessments</li>
+				  <li>T1, T2, PD, DTI, Spectroscopy</li>
+				  <li>∼3TB of imaging data</li>
+				  <li>2000 MRI acquisitions</li>
+				</ul>
+			    </small></p>
+			  </td>
+		      </tr></table>
+		    </section>
+		    
+		    <!-- Open Datasets -->
+		    <section>
+		      <h2><font color="yellow">Not-so-open datasets</font></h2>
+		      <p class="fragment roll-in"></p>
+		      <p class="fragment roll-in">ABIDE</p>
+		      <p class="fragment roll-in">ADHD 200</p>
+		      <p class="fragment roll-in"></p>
+		      <p class="fragment roll-in"></p>
+                      <p class="fragment roll-in">Human Connectome Project</p>
+		      <p class="fragment roll-in">NIHPD</p>
+		      <p class="fragment roll-in">IBIS</p>
+		    </section>
+		    
+		    <!-- Atlases  -->
+		    <section>
+		      <h2><font color="yellow">Atlases</font></h2>
+		      <p class="fragment roll-in">Talairach, Colin 27, Russ Polldrack, Me</p>
+		      <p class="fragment roll-in">Bigbrain</p>
+		      <p class="fragment roll-in">Working group for atlas building template INCF</p>
+		      <p class="fragment roll-in">ANIMAL</p>
+                      <p class="fragment roll-in">Louis</p>
+		      <p class="fragment roll-in">Allen Mouse Atlases</p>
+		      <p class="fragment roll-in">AAL</p>
+		    </section>
+
+		    <!-- BigBrain example -->
+		    <section>
+		      <table class="reveal">
+			<h2><font color="yellow">BigBrain</font></h2>
+			<tr>
+			  <td width="50%" style="vertical-align: middle">
+			    <img src="images/BigBrain.png">
+			  </td>
+			  <td width="50%" style="vertical-align: middle">
+			    <img src="images/BigBrain_paper.png">
+			  </td>
+		      </tr></table>
+		    </section>
+		    
+		    <!-- Tools  -->
+		    <section>
+		      <h2><font color="yellow">Tools</font></h2>
+		      <p class="fragment roll-in">BIDS</p>
+		      <p class="fragment roll-in">NIDM</p>
+		      <p class="fragment roll-in">ITK</p>
+		      <p class="fragment roll-in">Neurovault</p>
+                      <p class="fragment roll-in">NeuroSynth</p>
+		      <p class="fragment roll-in">SOLID- Tim Berners Lee</p>
+		      <p class="fragment roll-in">Mobile MRI</p>
+		    </section>
+
+		    <!-- Environments  -->
+		    <section>
+		      <h2><font color="yellow">Enviromments</font></h2>
+		      <p class="fragment roll-in">CIVET, Freesurfer for anatomical processing</p>
+		      <p class="fragment roll-in">NIAK, SPM, FSL for Functional processing</p>
+		      <p class="fragment roll-in">Boutiques</p>
+		      <p class="fragment roll-in">NiPype</p>
+                      <p class="fragment roll-in">Git - annex</p>
+		      <p class="fragment roll-in">Databases</p>
+		      <p class="fragment roll-in">High performance computing</p>
+		    </section>
+
+		    <!-- LORIS globally -->
+		    <section>
+		      <section data-background="images/LORIS_global.png">
+			<h1><font color ="blue">LORIS globally</font></h1>
 			  </section>
-			  			  
-			  <!-- LORIS globally -->
-			  <section data-background="images/LORIS_global.png">
-			    <h1><font color ="blue">LORIS globally</font></h1>
-			  </section>
-			  
-			  <!-- LORIS Projects -->
-			  <section>
-			    <!-- NIHPD -->
-			    <section>
-			      <img src="images/NIHPD_logo.jpg">
-			      <table class="reveal">
-				<tr>
-				  <td width="45%" style="vertical-align: middle">
-				    <img src="images/NIHPD_paper.png">
-				  </td>
-				  
-				  <td width="30%" style="vertical-align: middle">
-				    <img src="images/MRI_images_several.jpg">
-				  </td>
-				  <td width="30%" style="vertical-align: middle">
-				    <p><small>
-					<ul>
-					  <li>8 year study</li>
-					  <li>Longitudinal data</li>
-					  <li>532 subjects</li>
-					  <li>8000 distinct variables</li>
-					  <li>37000 individual assessments</li>
-					  <li>T1, T2, PD, DTI</li>
-					  <li>Spectroscopy</li>
-					  <li>∼3TB of imaging data</li>
-					  <li>2000 MRI acquisitions</li>
-					</ul>
-				    </small></p>
-				  </td>
-			      </tr></table>
-			    </section>
+		      
+		      <!-- LORIS Projects -->
+		     
 			    
 			    <!-- IBIS -->
 			    <section>
@@ -228,19 +322,7 @@
 			      </tr></table>
 			    </section>
 			    
-			    <!-- BigBrain  -->
-			    <section>
-			      <table class="reveal">
-				<h2><font color="yellow">BigBrain</font></h2>
-				<tr>
-				  <td width="50%" style="vertical-align: middle">
-				    <img src="images/BigBrain.png">
-				  </td>
-				  <td width="50%" style="vertical-align: middle">
-				    <img src="images/BigBrain_paper.png">
-				  </td>
-			      </tr></table>
-			    </section>
+		
 			    
 			    <!-- OMEGA - small pilot, interest has spiked  -->
 			    <section>
@@ -263,11 +345,11 @@
 				  </td>
 			      </tr></table>
 			    </section>
-			    
-			    <!-- MAVAN, Ludmer Centre  -->
+
+			    <!-- CCNA  -->
 			    <section>
 			      <table class="reveal">
-				<h2><font color="yellow">MAVAN and the Ludmer Centre</font></h2>
+				<h2><font color="yellow">CCNA</font></h2>
 				<tr>
 				  <td width="50%" style="vertical-align: middle">
 				    <img src="images/OMEGA.png">
@@ -275,20 +357,20 @@
 				  <td width="50%" style="vertical-align: middle">
 				    <p><small>
 					<ul>
-					  <li>MAVAN</li>
-					  <li>Maternal Adversity Vulnerability And NeuroDevelopement </li>
-					  <li>Behavioral, Imaging and Genomics</li>
-					  <li>Key project for the Ludmer Centre</li>
-					  <li>Examining acute and chronic stressors on early childhood developement</li>
-					  
+					  <li>The Open MEG Archive</li>
+					  <li>First open MEG data repository</li>
+					  <li>Growing number of scans</li>
+					  <li>Associated structural data</li>
+					  <li>Interest has spiked lately</li>
 					</ul>
 				    </small></p>
 				  </td>
 			      </tr></table>
 			    </section>
+			   
 			  </section>
-			    
-			  <!-- MNI Open Science -->
+		    
+		     <!-- MNI Open Science -->
 			  <section>
 			    <section>
 			      <h2><font color="yellow">Open Science</font></h2>
@@ -308,6 +390,10 @@
 				  <td>
 				    <img src="images/Open_science.png"> 
 			      </td></tr></table>	
+			    </section>
+
+	  		    <section>
+			      <h2><font color="yellow">What's in it for me?</font></h2>
 			    </section>
 			    
 			    <!-- Functionality that the Open Science initiative will provide -->
@@ -372,14 +458,17 @@
 			      <h2><font color="blue">LORIS team</font></h2>
 			    </section>
 			    
-			    <!-- Acknowledgemnts  -->
-			    <section data-transition="slide" data-background="#87CEEB" data-background-transition="zoom">
-			      <img src="images/Royal_vic.png">
-			      <h4>Acknowledgements</h4>
-			      <p><small><font color="black">Alan Evans, Alex Zijdenbos, Dario Vins, Jonathan Harlap, Matt Charlet, Andrew Corderey, Sebastian Muehlboeck, Reza Adalat, Penelope Kostopoulos, Louis Collins, Vladimir Fonov, Marc Rousseau, Mia Petkova, Rathi Gnanasekaran, David Brownlee, Tarek Sherif, Pierre Rioux, Nic Kassis, Leigh MacIntyre, Claude Lepage, Ilana Leppert, Carolina Makowski, Natasha Beck, Tristan Glatard, Bert Vincent, Lindsay Lewis, Najma Mahani,  Elodie Portales-Casamar, Alden Woodward, Sylvain Milot, Jean Francois Malouin, Sylvain Baillet, Daniel Kroetz, Martin Weiss,  Mathieu Desrosier, Jason Karamchandani, Amit Bar-Or, Ted Fon</font></small></p>
-			    </section>
+		    
+		    <!-- Acknowledgemnts  -->
+		    <section data-transition="slide" data-background="#87CEEB" data-background-transition="zoom">
+		      <img src="images/Royal_vic.png">
+		      <h4>Acknowledgements</h4>
+		      <p><small><font color="black">Alan Evans, Alex Zijdenbos, Dario Vins, Jonathan Harlap, Matt Charlet, Andrew Corderey, Sebastian Muehlboeck, Reza Adalat, Penelope Kostopoulos, Louis Collins, Vladimir Fonov, Marc Rousseau, Mia Petkova, Rathi Gnanasekaran, David Brownlee, Tarek Sherif, Pierre Rioux, Nic Kassis, Leigh MacIntyre, Claude Lepage, Ilana Leppert, Carolina Makowski, Natasha Beck, Tristan Glatard, Bert Vincent, Lindsay Lewis, Najma Mahani,  Elodie Portales-Casamar, Alden Woodward, Sylvain Milot, Jean Francois Malouin, Sylvain Baillet, Daniel Kroetz, Martin Weiss,  Mathieu Desrosier, Jason Karamchandani, Amit Bar-Or, Ted Fon</font></small></p>
+		    </section>
 			  </section>
-			</div>
+		    
+		    
+		  </div>
 		</div>
 		
 		<script src="lib/js/head.min.js"></script>
