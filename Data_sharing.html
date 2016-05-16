@@ -77,9 +77,9 @@
 		    <!-- This talk - Disclaimer-->
 		    <section data-transition="zoom">
 		      <h2>Today's talk</h2>
-		      <p><font color="red">Disclaimer - MNI-centric solutions</font></p>
+		      <p><font color="#FFFBB33">Disclaimer - MNI-centric solutions</font></p>
 		      <ol>
-			<li>Data Sharing preamble (hurdles, issues, solutions...)</li>
+			<li>Data Sharing: hurdles, issues, solutions...</li>
 			<li>Overview of data sharing initiatives</li>
 			<li>Examples of tools, datasets, and environments</li>
 			<li>LORIS and CBRAIN</li>
@@ -90,7 +90,7 @@
 		    <!-- What is Data Sharing? -->
 		    <section data-background="images/Data_sharing_cartoon.png">
 		      <h2><font color="black">What is Data Sharing?</font></h2>
-		      <p class="fragment roll-in"><font color="blue">Exchange of information</font></p>
+		      <p class="fragment roll-in"><font color="purple">Exchange of information</font></p>
 		      <p class="fragment roll-in"><font color="black">Datasets</font></p>
 		      <p class="fragment roll-in"><font color="black">Tools</font></p>
 		      <p class="fragment roll-in"><font color="black">Standarization</font></p>
@@ -107,12 +107,12 @@
 		      
 		    <!-- Why is Data Sharing Important? -->
 		    <section data-transition="concave">
-		      <h2><font color="yellow">Data Sharing Issues</font></h2>
+		      <h2>Data Sharing Issues</h2>
 		      <table>
 			<thead>
 			  <tr>
-			    <th><font color="blue">Benefits </font></th>
-			    <th><font color="blue">Hurdles </font></th>
+			    <th><font color="yellow">Benefits </font></th>
+			    <th><font color="yellow">Hurdles </font></th>
 			 </tr>
 			</thead>
 			<tbody>
@@ -165,7 +165,7 @@
 			    </td>
 			    <td width="60%" style="vertical-align: middle">
 			      <a href="https://tech.vijayp.ca/of-taxis-and-rainbows-f6bc289679a1#.jbat052vf"><img src="images/Data_breach_NYC_taxi.png"></a>
-			      <small><a href="https://www.mcgill.ca/bic/channels/event/feindel-brain-imaging-lecture-series-adrian-thorogood-embracing-open-science-best-practices-258420"  target="_blank">Adrian Thorogood BIC lecture March 19</a></small>
+			      <small><a href="https://www.mcgill.ca/bic/channels/event/feindel-brain-imaging-lecture-series-adrian-thorogood-embracing-open-science-best-practices-258420"  target="_blank">Adrian Thorogood BIC lecture - March 9, 2016</a></small>
 			      <img src="images/Data_breach_magazine.png">
 			    </td>
 			</tr></table>
@@ -176,7 +176,7 @@
 		    <section data-transition="concave">
 		      <section data-transition="concave">
 			<h2>Best practices in Data Sharing</h2>
-			<p><small><a href="http://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=1" target="_blank">Committee on Best Practices in Data Analysis and Sharing (COBIDAS)</a></small></p>
+			<small><a href="http://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=1" target="_blank">Committee on Best Practices in Data Analysis and Sharing (COBIDAS)</a></small>
 			<img src="images/COBIDAS.png">
 		      </section>
 		      
@@ -198,7 +198,7 @@
 
 		    <!-- Centralized versus De-centralized -->
 		     <section data-transition="concave">
-			<h2>Centralized or De-centralized?</h2>
+			<h2>Centralized or Distributed?</h2>
 			<img src="images/Networks.png">
 		     </section>
 		     
@@ -247,11 +247,11 @@
 			  <span class="fragment"><a href="http://rpq-qpn.ca/en/" target="_blank">QPN, </a></span>
 			  <span class="fragment"><a href="http://www.neurobureau.org" target="_blank">The NeuroBureau, </a></span>
 			  
-			  <span class="fragment"><a href="http://addictionresearch.nih.gov/abcd-study" target="_blank">ABCD, </a></span>
+			  <span class="fragment"><a href="http://addictionresearch.nih.gov/abcd-study" target="_blank">ABCD... </a></span>
 			</p>
 			
 			<p><b><font color="green"><span class="fragment">So </span></font>
-			    <font color="blue"><span class="fragment">many </span></font></b>
+			    <font color="yellow"><span class="fragment">many </span></font></b>
 			  <font color="red"><span class="fragment">initiatives! </span></font>
 			</p>
 		      </section>
@@ -265,14 +265,13 @@
 		      <!-- BIDS -->
 		      <section data-transition="fade">
 			<table class="reveal">
-			  <h2>Brain Imaging Data Structure</h2>
+			  <h2>BIDS</h2>
 			  <tr>
 			    <td width="75%" style="vertical-align: middle">
 			      <img src="images/BIDS.png">
 			    </td>
 			    <td width="25%" style="vertical-align: middle">
 			      <p>Common Ontology for Imaging Data</p>
-			      <p> Why BIDS?</p>
 			    </td>
 			</tr></table>
 		      </section>
@@ -281,8 +280,7 @@
 		      <section data-transition="fade">
 			<h2>NeuroImaging Data Model</h2>
 			<img src="images/Nidm.png">
-			      <p>Collection of specification documents that define extensions to the PROV model</p>
-			      <p>Uses provenance information to link scientific processing</p>
+			<p>Format for storing metadata, provenance, processing information</p>
 		      </section>
 		      
 		       <!-- Working group for atlas building template-->
@@ -292,14 +290,14 @@
 
 			 <table class="reveal">
 			   <tr>
-			    <td width="75%" style="vertical-align: middle">
+			    <td width="50%" style="vertical-align: middle">
 			      <img src="images/Atlas_group.JPG">
 			    </td>
-			    <td width="25%" style="vertical-align: middle">
+			    <td width="50%" style="vertical-align: middle">
 			      <p><font color="yellow">Goal:</font></p>
-			      <p><small>To create standardized JSON metadata to describe atlases</small></p>
-			      <p><small>For either volumetric or surface atlases</small></p>
-			      <p><small>Pipelines (e.g.CIVET) can access more atlases for anatomical standardization</small></p>
+			      <p>To create standardized JSON metadata to describe atlases</p>
+			      <p>For either volumetric or surface atlases</p>
+			      <p>Pipelines (e.g.CIVET) can access more atlases for anatomical standardization</p>
 			    </td>
 			 </tr></table>
 		       </section>
@@ -340,11 +338,11 @@
 			  <span class="fragment"><a href="http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152Lin" target="_blank">MNI 152, </a></span>
 			  <span class="fragment"><a href="http://www.bic.mni.mcgill.ca/ServicesAtlases/MNI305" target="_blank">MNI 305, </a></span>
 			 
-			  <span class="fragment"><a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">FSL, </a></span>
+			  <span class="fragment"><a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">FSL... </a></span>
 			</p>
 
 			<p><b><font color="green"><span class="fragment">So </span></font>
-			    <font color="blue"><span class="fragment">many </span></font></b>
+			    <font color="yellow"><span class="fragment">many </span></font></b>
 			  <font color="red"><span class="fragment">datasets! </span></font>
 			</p>
 			
@@ -352,14 +350,14 @@
 		      
 		      <!-- ADNI -->
 		      <section data-transition="zoom">
-			<h2><font color="yellow">ADNI</font></h2>
+			<h2>ADNI</h2>
 			<table class="reveal">
 			  <tr>
 			    <td style="vertical-align: middle">
 			      <img src="images/ADNI_paper.png">
 			    </td>
 			    <td style="vertical-align: top">
-			      <p><small>
+			      <p>
 				  <ul>
 				    <li>Cited 343 times</li><br>
 				    <li>Data-use agreements</li><br>
@@ -367,7 +365,7 @@
 				    <li>Restrictive</li><br>
 				    
 				  </ul>
-			      </small></p>
+			      </p>
 			    </td>
 			</tr></table>
 		      </section>
@@ -430,17 +428,9 @@
 
 		      <!-- QPN -->
 		         <section data-transition="fade">
-			<table class="reveal">
-			  <h2>Quebec Parkinson's Network</h2>
-			  <tr>
-			    <td width="50%" style="vertical-align: middle">
-			      <img src="images/QPN.png">
-			    </td>
-			    <td width="50%" style="vertical-align: middle">
-			  
-			    </td>
-			</tr></table>
-		      </section>
+			   <h2>Quebec Parkinson Network</h2>
+			   <img src="images/QPN.png">
+			 </section>
 
 		    </section>
 
@@ -466,7 +456,7 @@
 			  <span class="fragment"><a href="http://enigma.ini.usc.edu" target="_blank">Freesurfer, </a></span>
 			  <span class="fragment"><a href="http://fcon_1000.projects.nitrc.org/indi/enhanced/" target="_blank">SPM, </a></span>
 			  <span class="fragment"><a href="http://www.loni.usc.edu" target="_blank">FSL, </a></span>
-			  <span class="fragment"><a href="http://" target="_blank">Mobile MRI?, </a></span>
+			  <span class="fragment"><a href="http://" target="_blank">Mobile MRI, </a></span>
 			  <span class="fragment"><a href="http://coins.mrn.org" target="_blank">1000 Brains, </a></span>
 			  <span class="fragment"><a href="http://www.xnat.org" target="_blank">AAL, </a></span>
 			  <span class="fragment"><a href="https://www.braincode.ca" target="_blank">BrainCode, </a></span>
@@ -478,14 +468,12 @@
 			  <span class="fragment"><a href="https://cmind.research.cchmc.org" target="_blank">DICOM Confidential, </a></span>
 			  <span class="fragment"><a href="https://cmind.research.cchmc.org" target="_blank">DockerHub, </a></span>
 			  <span class="fragment"><a href="http://www.opengatecollaboration.org" target="_blank">Gate, </a></span>
-			  <span class="fragment"><a href="https://cmind.research.cchmc.org" target="_blank">CMIND, </a></span>			  
-
-
+			  <span class="fragment"><a href="https://cmind.research.cchmc.org" target="_blank">CMIND... </a></span>			  
 			  
 			</p>
 			
 			<p><b><font color="green"><span class="fragment">So </span></font>
-			    <font color="blue"><span class="fragment">many </span></font></b>
+			    <font color="yellow"><span class="fragment">many </span></font></b>
 			  <font color="red"><span class="fragment">Tools! </span></font>
 			  
 		      </section>
@@ -519,16 +507,16 @@
 			</tr></table>
 		      </section>
 		     
-		     <!-- DiCAT -->
-		     <section data-transition="fade">
-		       <img src="images/DiCAT.png">
-		     </section>
-
 		      <!-- Git Annex -->
 		     <section data-transition="fade">
 		       <img src="images/Git_annex.png">
 		     </section>
 
+		     <!-- DiCAT -->
+		     <section data-transition="fade">
+		       <img src="images/DiCAT.png">
+		     </section>
+		     
 		    </section> 
 
 		    <!-- Hackathons -->
@@ -553,23 +541,23 @@
 		    </section>
 
 		    <section data-transition="fade">
-		      <h2>MNI ecosystem - schematic</h2>
+		      <h2>LORIS - CBRAIN Data Flow</h2>
 		      <img src="images/MNI_ecosystem.png">
 		    </section>
 		    
 		    <!-- LORIS -->
 		    <section data-transition="fade">
-		      
-		      <!-- LORIS Dashboard -->   
-		      <section data-transition="zoom">
-			<h2>LORIS</h2>
-			<img src="images/LORIS_dashboard.png">
-		      </section>
 
 		      <!-- LORIS Key features -->   
 		      <section data-transition="zoom">
-			<h2>Key features</h2>
+			<h2>LORIS - Key features</h2>
 			<img src="images/Key_features.png">
+		      </section>
+		      
+		      <!-- LORIS Dashboard -->   
+		      <section data-transition="zoom">
+			<h2>LORIS Dashboard</h2>
+			<img src="images/LORIS_dashboard.png">
 		      </section>
 		      
 		      <!-- LORIS globally -->
@@ -611,10 +599,10 @@
 			<table class="reveal">
 			  <h2>CCNA</h2>
 			  <tr>
-			    <td width="70%" style="vertical-align: middle">
+			    <td width="70%" style="vertical-align: top">
 			      <img src="images/CCNA.png">
 			    </td>
-			      <td width="30%" style="vertical-align: middle">
+			      <td width="30%" style="vertical-align: top">
 				<p><small>
 				    <ul>
 				      <li>$35 million</li><br>
@@ -632,7 +620,7 @@
 		      <!-- OMEGA - small pilot, interest has spiked  -->
 		      <section data-transition="convex">
 			<table class="reveal">
-			  <h2>OMEGA</h2>
+			  <h2><a href="https://omega.bic.mni.mcgill.ca">OMEGA</a></h2>
 			  <tr>
 			    <td width="65%" style="vertical-align: middle">
 			      <img src="images/OMEGA.png">
@@ -642,7 +630,7 @@
 				  <ul>
 				    <li>Open MEG Archive</li><br>
 				    <li>First open MEG repository</li><br>
-				    <li>150 user accounts created</li><br>
+				    <li>180 user accounts created</li><br>
 				    <li>Associated structural data</li><br>
 				    <li>500+ reads on academia.edu</li><br>
 				  </ul>
@@ -737,12 +725,12 @@
 		      <!-- Functionality that the Open Science initiative will provide -->
 		     
 		      <section data-transition="concave">
-			<h2><font color="yellow">Open Science Functionality</font></h2>
+			<h2>Open Science Functionality</h2>
 			<table>
 			  <thead>
 			    <tr>
-			      <th><font color="blue">Acquisition & Storage</font></th>
-			      <th><font color="blue">Dissemination & Analysis</font></th>
+			      <th><font color="yellow">Acquisition & Storage</font></th>
+			      <th><font color="yellow">Dissemination & Analysis</font></th>
 			    </tr>
 			  </thead>
 			  <tbody>
