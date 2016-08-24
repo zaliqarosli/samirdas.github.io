@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>LORIS and Data Sharing</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<!-- The important Javascript libraries -->
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+		  
+		  <!-- Any section element inside of this container is displayed as a slide -->
+		  <div class="slides">
+		    
+		    <!-- Data Sharing  -->
+		    <section>
+		      <section>
+			<h2>LORIS and Data Sharing</h2>
+			<table class="reveal">
+			  <tr>
+			    <td width="50%" style="vertical-align: middle">
+			      <p><font color='yellow'>MNI software infrastructure<br></font></p>
+			      <p><small>August 24, 2016<br>
+				  Samir Das - Software Manager<br>
+			     McGill Centre for Integrative Neuroscience,<br> Montreal Neurological Institute </small></p>
+			   
+			    </td>
+			    <td>
+			   
+			  </td></tr>
+			  <tr>
+
+			    <td>
+			      <img src="images/MCIN.png">
+			    </td>
+			    <td>
+			      <img src="images/Ludmer.png">
+			    </td>
+			  </tr>
+			</table>
+		      </section>
+		      
+		      <section data-transition="convex">
+                        <img src="images/Spock.png">
+		      </section>
+		    </section>
+
+		    <!-- MNI ecosystem -->
+		    <section data-transition="fade">
+		      <img src="images/MNI_ecosystem_paper.png">
+		    </section>
+
+		  
+		    
+		    <!-- LORIS -->
+		    <section data-transition="fade">
+
+ <section data-transition="zoom">
+			<h2>LORIS</h2>
+			<img src="images/LORIS_paper.jpg">
+		      </section>
+		      
+		      <!-- LORIS Key features -->   
+		      <section data-transition="zoom">
+			<h2>LORIS - Key features</h2>
+			<img src="images/Key_features.png">
+		      </section>
+		      
+		      <!-- LORIS Dashboard -->   
+		      <section data-transition="zoom">
+			<h2>LORIS Dashboard</h2>
+			<img src="images/LORIS_dashboard.png">
+		      </section>
+		      
+		      <!-- LORIS globally -->
+		      <section data-background="images/LORIS_global.png">
+			<h1><font color ="blue">LORIS globally</font></h1>
+		      </section>
+
+<!-- NIHPD -->
+		      <section data-transition="convex">
+			<img src="images/NIHPD_logo.jpg">
+			<table class="reveal">
+			  <tr>
+			    <td width="45%" style="vertical-align: middle">
+			      <img src="images/NIHPD_paper.png">
+			    </td>
+			    
+			    <td width="30%" style="vertical-align: middle">
+			      <img src="images/MRI_images_several.jpg">
+			    </td>
+			    <td width="30%" style="vertical-align: top">
+			      <ul><small>
+				    <li>Cited 295 times</li>
+				    <li>Control data for NDAR</li>
+				    <li>Longitudinal study (8 years)</li>
+				    <li>532 subjects</li>
+				    <li>8000 distinct variables</li>
+				    <li>37000 individual assessments</li>
+				    <li>T1, T2, PD, DTI, Spectroscopy</li>
+				    <li>∼3TB of imaging data</li>
+				    <li>2000 MRI acquisitions</li>
+				  </small></ul>
+			    </td>
+			</tr></table>
+		      </section>
+		      
+		      <!-- IBIS -->
+		      <section data-transition="convex">
+			<img src="images/IBIS.png">
+			<table class="reveal">
+			  <tr>
+			    <td width="45%" style="vertical-align: middle">
+			      <img src="images/IBIS_paper.png">
+			    </td>
+			    
+			    <td width="30%" style="vertical-align: middle">
+			      <img src="images/IBIS_image.png">
+			    </td>
+			    <td width="30%" style="vertical-align: top">
+			      <p><small>
+				  <ul>
+				    <li>Autism infant brain development</li>
+				    <li>3000+ scans</li>
+				    <li>700+ subjects</li>
+				    <li>7000 distinct variables</li>
+				    <li>150,000+ individual assessments</li>
+				    <li>T1, T2, DTI, BOLD</li>
+				    <li>∼5 TBs imaging data</li>
+				    <li>Genetic/biospecimen data</li>
+				  </ul>
+			      </small></p>
+			    </td>
+			</tr></table>
+		      </section>
+		      
+		      <!-- CCNA  -->
+		      <section data-transition="concave">
+			<table class="reveal">
+			  <h2>CCNA</h2>
+			  <tr>
+			    <td width="70%" style="vertical-align: top">
+			      <img src="images/CCNA.png">
+			    </td>
+			      <td width="30%" style="vertical-align: top">
+				<p><small>
+				    <ul>
+				      <li>$35 million</li><br>
+				      <li>CIHR funded</li><br>
+				      <li>Pan Canadian Consortium</li><br>
+				      <li>Acquisition in June, 2016</li><br>
+				      <li>35 collections sites</li><br>
+				      <li>LORIS powered</li><br>
+				    </ul>
+				</small></p>
+			      </td>
+			</tr></table>
+		      </section>
+
+		       <!-- BigBrain example -->
+		      <section data-transition="fade">
+			<table class="reveal">
+			  <h2>BigBrain</h2>
+			  <tr>
+			    <td width="50%" style="vertical-align: middle">
+			      <img src="images/BigBrain.png">
+			    </td>
+			    <td width="50%" style="vertical-align: middle">
+			      <img src="images/BigBrain_paper.png">
+			    </td>
+			</tr></table>
+		      </section>
+
+		      <!-- QPN -->
+		         <section data-transition="fade">
+			   <h2>Quebec Parkinson Network</h2>
+			   <img src="images/QPN.png">
+			 </section>
+		      
+		      <!-- OMEGA - small pilot, interest has spiked  -->
+		      <section data-transition="convex">
+			<table class="reveal">
+			  <h2><a href="https://omega.bic.mni.mcgill.ca">OMEGA</a></h2>
+			  <tr>
+			    <td width="65%" style="vertical-align: middle">
+			      <img src="images/OMEGA.png">
+			    </td>
+			    <td width="35%" style="vertical-align: middle">
+			      <p><small>
+				  <ul>
+				    <li>Open MEG Archive</li><br>
+				    <li>First open MEG repository</li><br>
+				    <li>180 user accounts created</li><br>
+				    <li>Associated structural data</li><br>
+				    <li>500+ reads on academia.edu</li><br>
+				  </ul>
+			      </small></p>
+			    </td>
+			  </tr></table>
+		      </section>
+		    </section>
+
+
+		     <!-- BrainBrowser -->
+		      <section data-transition="fade">
+			<table class="reveal">
+			  <h2><a href="https://brainbrowser.cbrain.mcgill.ca">BrainBrowser</a></h2>
+			  <tr>
+			    <td width="50%" style="vertical-align: middle">
+			      <img src="images/BrainBrowser_VolumeViewer.png">
+			    </td>
+			    <td width="50%" style="vertical-align: middle">
+			      <img src="images/BrainBrowser_SurfaceViewer.png">
+			    </td>
+			</tr></table>
+		      </section>
+
+		      <!-- MNI Open Science -->
+		      <section data-transition="convex">
+			<section>
+			  <h2>Open Science</h2>
+			  <table class="reveal">
+			    <tr>
+			      <td width="50%" style="vertical-align: middle">
+				<img src="images/Nature_open_science.png"> 
+			      </td>
+			      <td>
+				<img src="images/Open_science.png"> 
+			  </td></tr></table>	
+			</section>
+			
+		    	<section data-transition="concave">
+			<h2><a href="https://biobank.bic.mni.mcgill.ca" target="_blank">LORIS Biobank instance</a></h2>
+			<img src="images/Biobank_LORIS.png">
+		      </section>
+		      
+		      <section data-transition="concave">
+			<h2><a href="https://imaging.bic.mni.mcgill.ca" target="_blank">LORIS Imaging instance</a></h2>
+			<img src="images/BIC_LORIS.png">
+		      </section>
+		      
+		      <!-- Functionality that the Open Science initiative will provide -->
+		     
+		      <section data-transition="concave">
+			<h2>Open Science Functionality</h2>
+			<table>
+			  <thead>
+			    <tr>
+			      <th><font color="yellow">Acquisition & Storage</font></th>
+			      <th><font color="yellow">Dissemination & Analysis</font></th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td><small>Organized/Accessible data</small></td>
+			      <td><small>Centralized repository</small></td>
+			    </tr>
+			    <tr>
+			      <td><small>Long term storage</small></td>
+			      <td><small>Provenance Capture</small></td>
+			    </tr>
+			    <tr>
+			      <td><small>Quality Control mechanisms</small></td>
+			      <td><small>API for interoperability</small></td>
+			    </tr>
+			    <tr>
+			      <td><small>Web visualization</small></td>
+			      <td><small>Consent is factored in</small></td>
+			    </tr>
+			    <tr>
+			      <td><small>Tablet/Mobile Friendly</small></td>
+			      <td><small>User account access control</small></td>
+			    </tr>
+			    <tr>
+			    <td><small>Anonymized automatically</small></td>
+			    <td><small>Completely de-identified</small></td>
+			    </tr>
+			    <tr>
+			      <td><small>Cross-modal linking</small></td>
+			      <td><small>Cross-study correlation</small></td>
+			    </tr>
+			    <tr>
+			      <td><small>Online Data Querying</small></td>
+			    <td><small>Access to high performance computing</small></td>
+			    </tr>
+			    
+			  </tbody>
+			</table>
+		      </section>
+
+
+		      <section data-transition="convex">
+                        <h2>What are the possibilities between our groups?</h2>
+		      </section>
+		      
+		      </section>
+		    
+		    <!-- Acknowledgemnts  -->
+		    <section data-transition="slide" data-background="#87CEEB" data-background-transition="zoom">
+		      <table class="reveal">
+			<tr>
+			  <td width="70%" style="vertical-align: top">
+			    <img src="images/LORIS_team.png">
+			  </td>
+			  <td width="30%" style="vertical-align: middle">
+			    <p>Thank you!<small><font color="blue" size="4">Acknowledgements:</font><font color="black" size="2"> Alan Evans, Alex Zijdenbos, Dario Vins, Jonathan Harlap, Matt Charlet, Andrew Corderey, Sebastian Muehlboeck, Reza Adalat, Louis Collins, Vladimir Fonov, Marc Rousseau, Mia Petkova, Rathi Gnanasekaran, David Brownlee, Tarek Sherif, Pierre Rioux, Nic Kassis, Leigh MacIntyre, Claude Lepage, Ilana Leppert, Natasha Beck, Tristan Glatard, Bert Vincent, Lindsay Lewis, Najma Mahani, Elodie Portales-Casamar, Alden Woodward, Sylvain Milot, Jean Francois Malouin, Sylvain Baillet, Daniel Kroetz, Martin Weiss, Mathieu Desrosier, Jason Karamchandani, Amit Bar-Or, Ted Fon, John Brietner, Derek Lo, Patrick Bermudez, Chris Steele, Pamela Patterson and one of my favourites: Pierre Bellec!</font></small></p>
+			    <p><font color="blue" size="4">LORIS team on left</font></p> 
+			  </td>
+		      </tr></table>
+		      
+ 		    </section>
+		    
+		    
+		    
+		  </div>
+		</div>
+		
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		
+		<script>
+		  
+		  // Full list of configuration options available at:
+		  // https://github.com/hakimel/reveal.js#configuration
+		  Reveal.initialize({
+		  controls: true,
+		  progress: true,
+		  history: true,
+		  center: true,
+		  
+		  transition: 'slide', // none/fade/slide/convex/concave/zoom
+		  
+		  // Optional reveal.js plugins
+		  dependencies: [
+		  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+		  { src: 'plugin/zoom-js/zoom.js', async: true },
+		  { src: 'plugin/notes/notes.js', async: true }
+		  ]
+		  });
+		  
+		</script>
+		
+	</body>
+</html>
