@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="utf-8">
+    
+    <title>MNI Ecosytem - McGill Centre for Integrative Neuroscience</title>
+
+    
+    <!-- The important Javascript libraries -->
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+  
+  <body>
+    <div class="reveal">
+      
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	<section>
+	  <section>
+	    <h1>THE MNI Ecosytem</h1>
+	    <h4> <font color="OrangeRed">McGill Centre for Integrative Neuroscience</font></h4>
+	    <table class="reveal">
+              <tr>
+		<td width="50%" style="vertical-align: middle">
+		<!-- ENTER DATE OF PRESENTATION HERE -->
+                  <p><small>ENTER DATE<br>
+		      Samir Das - Director of Technology<br>McGill Centre for Integrative Neuroscience<br> Montreal Neurological Institute</small></p>                                           			    
+		</td>
+		<td width="50%" style="vertical-align: middle">
+		  <a href="https://mcin-cnim.ca/" data-preview-link> <img src="images/MCIN.jpg"></a>
+		</td>
+	    </tr></table>
+	  </section>  
+	  
+	  <section data-transition="convex">
+            <img src="images/Spock.png">
+	  </section>
+	</section>
+
+	<!-- MNI ecosystem menu/summary-->
+	<section>
+	<section>
+	<div style = "background-color: black">
+		<h4 style = "color: Cyan">CBRAIN</h4>
+		<h4 style = "color: Blue">LORIS</h4>
+		<h4 style = "color: SpringGreen">Big Brain</h4>
+	</div>
+		<h1> THE MNI ECOSYSTEM</h1>
+
+	<div style = "background-color: black">
+        	<h4 style="color: orange">Brain Browser</h4>
+        	<h4 style="color: red">Open Science</h4>
+        	<h4 style="color: yellow">Data Sharing</h4>
+        </div>	
+	</section>
+   	<section id="fragments">
+                <h2 style = "color: blue">What’s involved?</h2>
+                        <p>
+                          <span class="fragment">Longitudinal acquisition, storage and curation, </span>
+                          <span class="fragment">Transfer, Anonymization, Security, Privacy, Ethics </span>
+                          <span class="fragment">Reproducbility, Interoperability, APIs,  </span>
+                          <span class="fragment">Validation, Quality control, Protocol checking</span>
+                          <span class="fragment">Preprocessing, Analysis, HPC </span>
+                          <span class="fragment">Provenance, Ontological standarization, data harmonization </span>
+                          <span class="fragment">Upgrades, Maintenance, Bug fixes </span>
+                          <span class="fragment">User Interface, Javascript, Bootstrap</span>
+                          <span class="fragment">Tracking, Extensibility </span>
+                          <span class="fragment">Data management, Summary statistics, </span>
+                          <span class="fragment">Workflows, Development, Tool integration </span>
+                          <span class="fragment">Data sharing, download, multi-modal linking, querying </span>
+                          <span class="fragment">Image processing, Visualization, </span>
+                          <span class="fragment">Networking, System Administration</span>
+                          <span class="fragment">Partnerships, Funding and HR </span>
+                          <br>
+                          <span class="fragment"><font color="yellow">...No big deal!</font></span>
+                        </p>
+        </section>
+	<section>
+                <h2>Data flow</h2>
+                <img src="images/Data_flow.jpg">
+        </section>	
+	</section>
+	
+	<!-- WHAT IS LORIS? -->
+	<section>
+	  <section>
+	    <h2>WHAT IS LORIS?</h2>
+	    <table class="reveal">
+	      <tr>
+		<td width="50%" style="vertical-align: middle">
+		  <a href="https://demo.loris.ca/main.php?" data-preview-link><img src="images/LORIS_logo.png"></a>					   
+		  <p><small> “LORIS is a modular and extensible web-based data management system that integrates all aspects of a multi-center study: from heterogeneous data acquisition (imaging, clinical, behavior, genetics) to storage, processing and ultimately dissemination.”</small></p>
+		</td>
+		<td>
+		  <img src="images/LORIS_paper.png"> 
+	    </td></tr></table>
+	  </section>
+	  
+	  <section>
+	    <h2>What does LORIS do?</h2>
+	    <img src="images/LORIS_functionality.png"> 
+	  </section>
+	  
+	 
+	  <section data-background="images/LORIS_full_functionality.png">
+	    <h1><font color="blue">What does LORIS actually do?</font></h1>
+	  </section>
+	  
+	  
+	  <section data-background="images/LORIS_global.png">
+	    <h1><font color ="blue">LORIS globally</font></h1>
+	  </section>
+	  
+	  <section>
+            <img src="images/NIHPD_logo.jpg">
+	    <table class="reveal">
+              <tr>
+		<td width="45%" style="vertical-align: middle">
+		  <img src="images/NIHPD_paper.png">
+		</td>
+		
+                <td width="30%" style="vertical-align: middle">
+		  <img src="images/MRI_images_several.jpg">
+		</td>
+		<td width="30%" style="vertical-align: middle">
+		  <p><small>
+		      <ul>
+			<li>8 year study</li>
+			<li>Longitudinal data</li>
+			<li>532 subjects</li>
+			<li>8000 distinct variables</li>
+			<li>37000 individual assessments</li>
+			<li>T1, T2, PD, DTI</li>
+			<li>Spectroscopy</li>
+			<li>∼3TB of imaging data</li>
+			<li>2000 MRI acquisitions</li>
+		      </ul>
+		  </small></p>
+		</td>
+	    </tr></table>
+	  </section>
+	  
+	  <section>
+            <img src="images/IBIS.png">
+            <table class="reveal">
+              <tr>
+                <td width="45%" style="vertical-align: middle">
+		  <img src="images/IBIS_paper.png">
+                </td>
+		
+                <td width="30%" style="vertical-align: middle">
+		  <img src="images/IBIS_image.png">
+                </td>
+                <td width="30%" style="vertical-align: middle">
+		  <p><small>
+                      <ul>
+                        <li>Infant brain development in autism</li>
+                        <li>3000+ scans</li>
+                        <li>700+ subjects</li>
+                        <li>7000 distinct variables</li>
+                        <li>150,000+ individual assessments</li>
+                        <li>T1, T2, DTI, BOLD</li>
+                        <li>∼5 TBs of imaging data</li>
+                        <li>Genetic/biospecimen data</li>
+		      </ul>
+		  </small></p>
+                </td>
+            </tr></table>
+	  </section>
+	  
+	  <!--CCNA-->
+	  <section>
+            <img src="images/CCNA.png">
+	  </section>
+	</section>
+	
+	<!--CBRAIN-->
+	<section>
+	
+	<section>
+            <h2>WHAT IS CBRAIN?</h2>
+            <table class="reveal">
+              <tr>
+                <td width="50%" style="vertical-align: middle">
+                  <a href="https://mcin-cnim.ca/technology/cbrain/" data-preview-link><img src="images/cbrain-logo.png"></a>
+                  <p><small>“CBRAIN is web-based software that allows neuroimaging researchers to perform computationally intensive analyses on data by connecting them to High-Performance Computing (HPC) facilities across Canada and around the world.”</small></p>
+		<p><small>“CBRAIN connects researchers to the tools and processing power required to handle the large neuroimaging datasets that have become the norm in the field.”</small></p>
+                </td>
+                <td>
+                  <img src="images/CBRAIN_paper.png">
+            </td></tr></table>
+          </section>
+
+	<!--CBRAIN SCHEMA-->
+	  <section>
+	      <h2>CBRAIN SCHEMA</h2>
+		<img src="images/CBRAIN_schema.png" width="80%">
+	  </section>
+
+	  <!--CBRAIN hours and distribution-->	  
+	  <section>
+	    <img src="images/CBRAIN_distribution.png" width="90%">
+	  </section>
+
+	  <!--CBRAIN hours and distribution-->
+	  <section>
+	    <h2>CBRAIN Computing Resources</h2>
+            <img src="images/CBRAIN_hours.png">
+	  </section>
+	  
+	  <!--CBRAIN portal-->
+	  <section>
+	    <h2>CBRAIN portal</h2>
+            <a href="https://portal.cbrain.mcgill.ca/login" data-preview-link><img src="images/CBRAIN_mainpage.png"></a>
+	  </section>
+
+	   <!--CIVET (and NIAK?)-->
+	  <section>
+	    <h2>CIVET</h2>
+            <img src="images/CIVET_processing_steps.png">
+	  </section>
+
+	  <section>
+	    <h2>NIAK</h2>
+            <img src="images/NIAK.jpg" width="80%">
+	  </section>
+	  
+	</section>
+	
+	 <!--BrainBrowser-->
+          <section>
+            <table class="reveal">
+              <h2>Brainbrowser</h2>
+              <tr>
+                <td width="55%" style="vertical-align: middle">
+                  <img src="images/BrainBrowser_SurfaceViewer.png">
+                </td>
+                <td width="45%" style="vertical-align: middle">
+                  <img src="images/BrainBrowser_VolumeViewer.png">
+                </td>
+            </tr></table>
+          </section>
+
+	<!--DATA SHARING-->
+	<section>
+	  <!--Data sharing including data publishing-->
+	  <section data-background="images/Data_sharing_cartoon.png">
+	    <h2><font color="blue">Data Sharing</font></h2>
+	  </section>
+
+	  <!-- Why is Data Sharing Important? -->
+	  <section data-transition="concave">
+	    <h2>Data Sharing Issues</h2>
+	    <table>
+	      <thead>
+		<tr>
+		  <th><font color="yellow">Benefits </font></th>
+		  <th><font color="yellow">Hurdles </font></th>
+		</tr>
+	      </thead>
+	      <tbody>
+		<tr>
+		  <td>More citations</td>
+		  <td>Fear</td>
+		</tr>
+		<tr>
+		  <td>Reduces waste/duplication</td>
+		  <td>Technical challenges</td>
+		</tr>
+		<tr>
+		  <td>Increased exposure</td>
+		  <td>Privacy concerns</td>
+		</tr>
+		<tr>
+		  <td>Access to larger datasets</td>
+		  <td>Data Harmonization</td>
+		</tr>
+		<tr>
+		  <td>Access to rare data</td>
+		  <td>Interoperability</td>
+		</tr>
+		<tr>
+		  <td>Less attrition</td>
+		  <td>Reproducibility</td>
+		</tr>
+		<tr>
+		  <td>Increased validation</td>
+		  <td>Obtaining ethics</td>
+		</tr>
+		<tr>
+		  <td>Saving Tax $$/more funding</td>
+		  <td>Public dataset not identical</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </section>
+	  
+	  <!--Global Data Sharing Initiatives-->
+	  <section  data-transition="convex">
+	    <h2>Global Data Sharing Initiatives</h2>
+	    <img src="images/COBIDAS.png" width = "75%">
+	  </section>
+	  
+	  <!--Interoperability-->
+	   <section>
+	    <h2>Interoperability</h2>
+	    <img src="images/Solutions.png" width = "80%">
+	  </section>
+
+	   <!--Collaboration with other groups -->
+	   
+	   <section data-transition="slide">
+	     <h2>Collaboration with global data sharing groups</h2>
+	     <p>
+		 <span class="fragment"><a href="https://www.incf.org" target="_blank">INCF, </a></span>
+		 <span class="fragment"><a href="https://osf.io" target="_blank">Open Science Framework, </a></span>
+		 <span class="fragment"><a href="https://www.nitrc.org" target="_blank">NITRC, </a></span>
+		 <span class="fragment"><a href="http://alleninstitute.org" target="_blank">Allen Institute, </a></span>
+		 <span class="fragment"><a href="https://ndar.nih.gov" target="_blank">NDAR, </a></span>
+		 <span class="fragment"><a href="https://openfmri.org" target="_blank">HAWG (Atlas Building Group), </a></span>
+		 <span class="fragment"><a href="http://www.humanbrainmapping.org" target="_blank">Organization Human Brain Mapping, </a></span>
+		 <span class="fragment"><a href="https://www.humanbrainproject.eu" target="_blank">Human Brain Project, </a></span>
+		 <span class="fragment"><a href="https://www.computecanada.ca" target="_blank">Compute Canada, </a></span>
+		 <span class="fragment"><a href="https://www.maelstrom-research.org" target="_blank">Maelstrom, </a></span>
+		 
+		 <span class="fragment"><a href="" target="_blank">Edinburgh BRAINS ImageBank, </a></span>
+                 <span class="fragment"><a href="http://coins.mrn.org" target="_blank">COINS, </a></span>
+		 <span class="fragment"><a href="http://www.xnat.org" target="_blank">XNAT, </a></span>
+		 
+		 <span class="fragment"><a href="http://www.creatis.insa-lyon.fr/vip/" target="_blank">VIP, </a></span>
+		 <span class="fragment"><a href="https://www.braincode.ca" target="_blank">BrainCode, </a></span>
+		 <span class="fragment"><a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">BIDS, </a></span>
+		 <span class="fragment"><a href="http://www.cima-q.ca" target="_blank">NIDM, </a></span>
+		 <span class="fragment"><a href="http://www.neurodevnet.ca" target="_blank">NeuroDevNet, </a></span>
+		 <span class="fragment"><a href="http://gusto.sg/v2/index.php" target="_blank">GUSTO, </a></span>
+		 <span class="fragment"><a href="http://rpq-qpn.ca/en/" target="_blank">QPN, </a></span>
+		 <span class="fragment"><a href="http://www.neurobureau.org" target="_blank">Boutiques, </a></span>
+		  <span class="fragment"><a href="http://www.neurobureau.org" target="_blank">VIP </a></span>
+		 
+		 
+	       </p>
+	       
+	   </section>
+
+	    <!-- Hackathons -->
+		    <section data-transition="fade">
+			<table class="reveal">
+			  <h2><a href="">Hackathons</a></h2>
+			  <tr>
+			    <td width="75%" style="vertical-align: middle">
+			      <img src="images/C-BASE.png">
+			    </td>
+			    <td width="25%" style="vertical-align: middle">
+			     <p> Important value of hackathons to data sharing initiatives</p>
+			     <img src="images/Brainhack.png">
+			    </td>
+			</tr></table>
+		      </section>
+	     
+	   </section>
+		
+	<!-- BIG BRAIN -->
+	<section>
+	<section>
+               <table class="reveal">
+                 <h2>BigBrain</h2>
+                 <tr>
+                   <td width="50%" style="vertical-align: middle">
+                     <a href="https://bigbrain.loris.ca/main.php" data-preview-link><img src="images/BigBrain.png"></a>
+                   </td>
+                   <td width="50%" style="vertical-align: middle">
+                     <img src="images/BigBrain_paper.png">
+                   </td>
+               </tr></table>
+     	</section>
+	<section data-background-video="images/Bigbrain_low.mp4" data-background-color="#000000">
+                          <p class="fragment current-visible"><font size="9" color="blue">BigBrain - high resolution reference brain</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">Multimodal integration into an anatomically realistic standard space</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">Years of development</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">20 micron resolution</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">7404 histological slices</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">1 Terabyte dataset</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">Available freely at https://bigbrain.loris.ca</font></p>
+                        </section>
+	<section>
+		<a href="https://neuroglancer.humanbrainproject.org/#!{'layers':{' grey value: ':{'type':'image'_'source':'precomputed://https://neuroglancer.humanbrainproject.org/precomputed/BigBrainRelease.2015/8bit'_'transform':[[1_0_0_-70666600]_[0_1_0_-70000000]_[0_0_1_-58777700]_[0_0_0_1]]}_' tissue type: ':{'type':'segmentation'_'source':'precomputed://https://neuroglancer.humanbrainproject.org/precomputed/BigBrainRelease.2015/classif'_'selectedAlpha':0_'segments':['100'_'0']_'transform':[[1_0_0_-70666600]_[0_1_0_-72910000]_[0_0_1_-58777700]_[0_0_0_1]]}}_'navigation':{'pose':{'position':{'voxelSize':[21166.666015625_20000_21166.666015625]_'voxelCoordinates':[545.3997802734375_16.288618087768555_80.64189147949219]}}_'zoomFactor':520469.94104040385}_'perspectiveOrientation':[0.3140767216682434_-0.7418519854545593_0.4988985061645508_-0.3195493221282959]_'perspectiveZoom':1922235.5293810747}" data-preview-link><img src="images/bigbrain_shot.png"></a>
+	</section>	
+	</section>     
+	
+	<!--Open Science-->
+	<section>    
+	 <section data-transition="convex">
+	       <h2>Open Science</h2>
+	       <table class="reveal">
+		 <tr>
+		   <td width="50%" style="vertical-align: middle">
+		     <img src="images/Nature_open_science.png"> 
+		   </td>
+		   <td>
+		     <img src="images/Open_science.png"> 
+	       </td></tr></table>	
+	     </section>
+	     
+	     <section>
+	       <h2>Open Science</h2>
+	       <img src="images/Open_science_paper.png">
+	     </section>
+	     
+	     <section>
+	       <h2>Cyberinfrastructure</h2>
+	       <img src="images/Cyberinfrastructure.png">			
+	     </section>
+	     
+	     <section data-transition="concave">
+	       <h2>Open Science Functionality</h2>
+	       <table>
+		 <thead>
+		   <tr>
+		     <th><font color="yellow">Acquisition & Storage</font></th>
+		     <th><font color="yellow">Dissemination & Analysis</font></th>
+		   </tr>
+		 </thead>
+		 <tbody>
+		   <tr>
+		     <td><small>Organized/Accessible data</small></td>
+		     <td><small>Centralized repository</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Long term storage</small></td>
+		     <td><small>Provenance Capture</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Quality Control mechanisms</small></td>
+		     <td><small>API for interoperability</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Web visualization</small></td>
+		     <td><small>Consent is factored in</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Tablet/Mobile Friendly</small></td>
+		     <td><small>User account access control</small></td>
+
+		   </tr>
+		   <tr>
+		     <td><small>Anonymized automatically</small></td>
+		     <td><small>Completely de-identified</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Cross-modal linking</small></td>
+		     <td><small>Cross-study correlation</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Online Data Querying</small></td>
+		     <td><small>Access to high performance computing</small></td>
+		   </tr>
+		   
+		 </tbody>
+	       </table>
+	     </section>
+	     
+	   </section>
+
+	   <!--Actual Science-->
+	   <section>
+	       <h2>Actual Science</h2>
+	       <img src="images/ESM.png">
+	     </section>
+	   
+	   <!--National Infrastructure-->
+	    <section data-transition="convex">
+	       <h2>National Network</h2>
+	       <table class="reveal">
+		 <tr>
+		   <td width="50%" style="vertical-align: middle">
+		     <img src="images/Networks.png"> 
+		   </td>
+		   <td>
+		     <img src="images/Open_science_national.png"> 
+	       </td></tr></table>
+	       <p>Including "Data Publishing"</p>
+	     </section>
+	   
+	   <!--International-->
+	   <section>
+	     <img src="images/International.png">
+	   </section>
+	   
+	   
+	   <!--Acknowledgements-->
+	   <section data-transition="slide" data-background="#87CEEB" data-background-transition="zoom">
+	     <img src="images/Royal_vic.png">
+	     <h4>Acknowledgments</h4>
+	     <p><small><font color="black">Alan Evans, Alex Zijdenbos, Reza Adalat, Penelope Kostopoulos, Louis Collins, Vladimir Fonov, Marc Rousseau, Tarek Sherif, Pierre Rioux, Nic Kassis, Leigh MacIntyre, Claude Lepage, Ilana Leppert, Carolina Makowski, Natasha Beck, Tristan Glatard, Bert Vincent, Lindsay Lewis, Alden Woodward, Sylvain Milot, Jean Francois Malouin</font></small></p>
+	     <p><small> <font color="white">LORIS Developers: </font><font color="black"> Dario Vins, Jonathan Harlap, Matt Charlet, Andrew Corderey, Sebastien Muehlboeck, David Brownlee, Zia Mohades, David MacFarlane, Cecile Madjar, Mia Petkova, Christine Rogers, Rathi Gnanasekeran, Justin Kat, Nicolas Brossard, Tara Campbell, Jordan Stirling, Mouna Safi-Harab, Greg Luneau, Rida Abou-Haidar, Daniel Kroetz, Pierre-Emmaunel, Tom Beaudry, Shen Wang, John Saigle, Sanitago Paiva & Surthy Matthews</font></small> </p>
+	   </section>
+	
+	   
+	   
+      </div>
+      
+    </div>
+		
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    
+    <script>
+      
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
