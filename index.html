@@ -1,636 +1,548 @@
 <!doctype html>
 <html lang="en">
+ 
+  <head>
+    <meta charset="utf-8">
+    
+    <title>MNI Ecosytem - McGill Centre for Integrative Neuroscience</title>
 
-	<head>
-		<meta charset="utf-8">
+    
+    <!-- The important Javascript libraries -->
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+  
+  <body>
+    <div class="reveal">
+      
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	<section>
+	  <section>
+	    <h1>THE MNI Ecosytem</h1>
+	    <h4> <font color="OrangeRed">McGill Centre for Integrative Neuroscience</font></h4>
+	    <table class="reveal">
+              <tr>
+		<td width="50%" style="vertical-align: middle">
+		<!-- ENTER DATE OF PRESENTATION HERE -->
+                  <p><small>ENTER DATE<br>
+		      Samir Das - Director of Technology<br>McGill Centre for Integrative Neuroscience<br> Montreal Neurological Institute</small></p>                                           			    
+		</td>
+		<td width="50%" style="vertical-align: middle">
+		  <a href="https://mcin-cnim.ca/" data-preview-link> <img src="images/MCIN.jpg"></a>
+		</td>
+	    </tr></table>
+	  </section>  
+	  
+	  <section data-transition="convex">
+            <img src="images/Spock.png">
+	  </section>
+	</section>
 
-		<title>LORIS - A Database System</title>
+	<!-- MNI ecosystem menu/summary-->
+	<section>
+	<section>
+	<div style = "background-color: black">
+		<a href="CBRAIN_indepth.html#/cbrain-indepth-destination"><h4 style = "color:Cyan">CBRAIN</h4></a>
+		<a href="LORIS_indepth.html#/loris-indepth-destination"><h4 style = "color: Blue">LORIS</h4></a>
+		<h4 style = "color: SpringGreen">Big Brain</h4>
+	</div>
+		<h1> THE MNI ECOSYSTEM</h1>
 
+	<div style = "background-color: black">
+        	<h4 style="color: orange">Brain Browser</h4>
+        	<a href="Open_Science.html#/openscience-destination"><h4 style="color: red">Open Science</h4></a>
+        	<a href="Data_sharing.html#/data-sharing-destination"><h4 style="color: yellow">Data Sharing</h4></a>
+        </div>	
+	</section>
+   	<section id="fragments">
+                <h2 style = "color: blue">What’s involved?</h2>
+                        <p>
+                          <span class="fragment">Longitudinal acquisition, storage and curation, </span>
+                          <span class="fragment">Transfer, Anonymization, Security, Privacy, Ethics </span>
+                          <span class="fragment">Reproducbility, Interoperability, APIs,  </span>
+                          <span class="fragment">Validation, Quality control, Protocol checking</span>
+                          <span class="fragment">Preprocessing, Analysis, HPC </span>
+                          <span class="fragment">Provenance, Ontological standarization, data harmonization </span>
+                          <span class="fragment">Upgrades, Maintenance, Bug fixes </span>
+                          <span class="fragment">User Interface, Javascript, Bootstrap</span>
+                          <span class="fragment">Tracking, Extensibility </span>
+                          <span class="fragment">Data management, Summary statistics, </span>
+                          <span class="fragment">Workflows, Development, Tool integration </span>
+                          <span class="fragment">Data sharing, download, multi-modal linking, querying </span>
+                          <span class="fragment">Image processing, Visualization, </span>
+                          <span class="fragment">Networking, System Administration</span>
+                          <span class="fragment">Partnerships, Funding and HR </span>
+                          <br>
+                          <span class="fragment"><font color="yellow">...No big deal!</font></span>
+                        </p>
+        </section>
+	<section>
+                <h2>Data flow</h2>
+                <img src="images/Data_flow.jpg">
+        </section>	
+	</section>
 	
-		<!-- The important Javascript libraries -->
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<!-- WHAT IS LORIS? -->
+	<section>
+	  <section>
+	    <h2>WHAT IS LORIS?</h2>
+	    <table class="reveal">
+	      <tr>
+		<td width="50%" style="vertical-align: middle">
+		  <a href="https://demo.loris.ca/main.php?" data-preview-link><img src="images/LORIS_logo.png"></a>					   
+		  <p><small> “LORIS is a modular and extensible web-based data management system that integrates all aspects of a multi-center study: from heterogeneous data acquisition (imaging, clinical, behavior, genetics) to storage, processing and ultimately dissemination.”</small></p>
+		</td>
+		<td>
+		  <img src="images/LORIS_paper.png"> 
+	    </td></tr></table>
+	  </section>
+	  
+	  <section>
+	    <h2>What does LORIS do?</h2>
+	    <img src="images/LORIS_functionality.png"> 
+	  </section>
+	  
+	 
+	  <section data-background="images/LORIS_full_functionality.png">
+	    <h1><font color="blue">What does LORIS actually do?</font></h1>
+	  </section>
+	  
+	  
+	  <section data-background="images/LORIS_global.png">
+	    <h1><font color ="blue">LORIS globally</font></h1>
+	  </section>
+	  
+	  <section>
+            <img src="images/NIHPD_logo.jpg">
+	    <table class="reveal">
+              <tr>
+		<td width="45%" style="vertical-align: middle">
+		  <img src="images/NIHPD_paper.png">
+		</td>
+		
+                <td width="30%" style="vertical-align: middle">
+		  <img src="images/MRI_images_several.jpg">
+		</td>
+		<td width="30%" style="vertical-align: middle">
+		  <p><small>
+		      <ul>
+			<li>8 year study</li>
+			<li>Longitudinal data</li>
+			<li>532 subjects</li>
+			<li>8000 distinct variables</li>
+			<li>37000 individual assessments</li>
+			<li>T1, T2, PD, DTI</li>
+			<li>Spectroscopy</li>
+			<li>∼3TB of imaging data</li>
+			<li>2000 MRI acquisitions</li>
+		      </ul>
+		  </small></p>
+		</td>
+	    </tr></table>
+	  </section>
+	  
+	  <section>
+            <img src="images/IBIS.png">
+            <table class="reveal">
+              <tr>
+                <td width="45%" style="vertical-align: middle">
+		  <img src="images/IBIS_paper.png">
+                </td>
+		
+                <td width="30%" style="vertical-align: middle">
+		  <img src="images/IBIS_image.png">
+                </td>
+                <td width="30%" style="vertical-align: middle">
+		  <p><small>
+                      <ul>
+                        <li>Infant brain development in autism</li>
+                        <li>3000+ scans</li>
+                        <li>700+ subjects</li>
+                        <li>7000 distinct variables</li>
+                        <li>150,000+ individual assessments</li>
+                        <li>T1, T2, DTI, BOLD</li>
+                        <li>∼5 TBs of imaging data</li>
+                        <li>Genetic/biospecimen data</li>
+		      </ul>
+		  </small></p>
+                </td>
+            </tr></table>
+	  </section>
+	  
+	  <!--CCNA-->
+	  <section>
+            <img src="images/CCNA.png">
+	  </section>
+	</section>
+	
+	<!--CBRAIN-->
+	<section>
+	
+	<section>
+            <h2>WHAT IS CBRAIN?</h2>
+            <table class="reveal">
+              <tr>
+                <td width="50%" style="vertical-align: middle">
+                  <a href="https://mcin-cnim.ca/technology/cbrain/" data-preview-link><img src="images/cbrain-logo.png"></a>
+                  <p><small>“CBRAIN is web-based software that allows neuroimaging researchers to perform computationally intensive analyses on data by connecting them to High-Performance Computing (HPC) facilities across Canada and around the world.”</small></p>
+		<p><small>“CBRAIN connects researchers to the tools and processing power required to handle the large neuroimaging datasets that have become the norm in the field.”</small></p>
+                </td>
+                <td>
+                  <img src="images/CBRAIN_paper.png">
+            </td></tr></table>
+          </section>
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!--CBRAIN SCHEMA-->
+	  <section>
+	      <h2>CBRAIN SCHEMA</h2>
+		<img src="images/CBRAIN_schema.png" width="80%">
+	  </section>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+	  <!--CBRAIN hours and distribution-->	  
+	  <section>
+	    <img src="images/CBRAIN_distribution.png" width="90%">
+	  </section>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+	  <!--CBRAIN hours and distribution-->
+	  <section>
+	    <h2>CBRAIN Computing Resources</h2>
+            <img src="images/CBRAIN_hours.png">
+	  </section>
+	  
+	  <!--CBRAIN portal-->
+	  <section>
+	    <h2>CBRAIN portal</h2>
+            <a href="https://portal.cbrain.mcgill.ca/login" data-preview-link><img src="images/CBRAIN_mainpage.png"></a>
+	  </section>
 
-	<body>
-		<div class="reveal">
+	   <!--CIVET (and NIAK?)-->
+	  <section>
+	    <h2>CIVET</h2>
+            <img src="images/CIVET_processing_steps.png">
+	  </section>
 
-		  <!-- Any section element inside of this container is displayed as a slide -->
-		  <div class="slides">
-		    <section> 
-		      <section>
-			<h2>BIC Infrastructure Software</h2>
-			<h4> LORIS, CBRAIN, and More...</h4>
-			<table class="reveal">
-                          <tr>
-                            <td width="50%" style="vertical-align: middle">
-                              <p><font color='yellow'> Dr. William Feindel<br> Lecture Series</font></p>
-			      
-			      <p><small>March 30, 2015<br>
-				  Samir Das - Software Manager</small></p>                                           
-			    </td>
-			    
-                            <td>
-                              <img src="images/Feindel.png">
-			</td></tr></table>
-		      </section>
-		      
-		      <section>
-                        <img src="images/12_years.png">
-                      </section>
-		    
-		      <section>
-                        <img src="images/Bald_samir.jpg">
-                      </section>
-		    </section>
+	  <section>
+	    <h2>NIAK</h2>
+            <img src="images/NIAK.jpg" width="80%">
+	  </section>
+	  
+	</section>
+	
+	 <!--BrainBrowser-->
+          <section>
+            <table class="reveal">
+              <h2>Brainbrowser</h2>
+              <tr>
+                <td width="55%" style="vertical-align: middle">
+                  <img src="images/BrainBrowser_SurfaceViewer.png">
+                </td>
+                <td width="45%" style="vertical-align: middle">
+                  <img src="images/BrainBrowser_VolumeViewer.png">
+                </td>
+            </tr></table>
+          </section>
 
+	<!--DATA SHARING-->
+	<section>
+	  <!--Data sharing including data publishing-->
+	  <section data-background="images/Data_sharing_cartoon.png">
+	    <h2><font color="blue">Data Sharing</font></h2>
+	  </section>
+
+	  <!-- Why is Data Sharing Important? -->
+	  <section data-transition="concave">
+	    <h2>Data Sharing Issues</h2>
+	    <table>
+	      <thead>
+		<tr>
+		  <th><font color="yellow">Benefits </font></th>
+		  <th><font color="yellow">Hurdles </font></th>
+		</tr>
+	      </thead>
+	      <tbody>
+		<tr>
+		  <td>More citations</td>
+		  <td>Fear</td>
+		</tr>
+		<tr>
+		  <td>Reduces waste/duplication</td>
+		  <td>Technical challenges</td>
+		</tr>
+		<tr>
+		  <td>Increased exposure</td>
+		  <td>Privacy concerns</td>
+		</tr>
+		<tr>
+		  <td>Access to larger datasets</td>
+		  <td>Data Harmonization</td>
+		</tr>
+		<tr>
+		  <td>Access to rare data</td>
+		  <td>Interoperability</td>
+		</tr>
+		<tr>
+		  <td>Less attrition</td>
+		  <td>Reproducibility</td>
+		</tr>
+		<tr>
+		  <td>Increased validation</td>
+		  <td>Obtaining ethics</td>
+		</tr>
+		<tr>
+		  <td>Saving Tax $$/more funding</td>
+		  <td>Public dataset not identical</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </section>
+	  
+	  <!--Global Data Sharing Initiatives-->
+	  <section  data-transition="convex">
+	    <h2>Global Data Sharing Initiatives</h2>
+	    <img src="images/COBIDAS.png" width = "75%">
+	  </section>
+	  
+	  <!--Interoperability-->
+	   <section>
+	    <h2>Interoperability</h2>
+	    <img src="images/Solutions.png" width = "80%">
+	  </section>
+
+	   <!--Collaboration with other groups -->
+	   
+	   <section data-transition="slide">
+	     <h2>Collaboration with global data sharing groups</h2>
+	     <p>
+		 <span class="fragment"><a href="https://www.incf.org" target="_blank">INCF, </a></span>
+		 <span class="fragment"><a href="https://osf.io" target="_blank">Open Science Framework, </a></span>
+		 <span class="fragment"><a href="https://www.nitrc.org" target="_blank">NITRC, </a></span>
+		 <span class="fragment"><a href="http://alleninstitute.org" target="_blank">Allen Institute, </a></span>
+		 <span class="fragment"><a href="https://ndar.nih.gov" target="_blank">NDAR, </a></span>
+		 <span class="fragment"><a href="https://openfmri.org" target="_blank">HAWG (Atlas Building Group), </a></span>
+		 <span class="fragment"><a href="http://www.humanbrainmapping.org" target="_blank">Organization Human Brain Mapping, </a></span>
+		 <span class="fragment"><a href="https://www.humanbrainproject.eu" target="_blank">Human Brain Project, </a></span>
+		 <span class="fragment"><a href="https://www.computecanada.ca" target="_blank">Compute Canada, </a></span>
+		 <span class="fragment"><a href="https://www.maelstrom-research.org" target="_blank">Maelstrom, </a></span>
 		 
-		      <section id="fragments">
-			<h2><font color="blue">From Acquisition to Analysis</font></h2>
-			<p>
-			  <span class="fragment">Data acquisition, </span>
-			  <span class="fragment">Transfer, </span>
-			  <span class="fragment">Anonymization, </span>
-			  <span class="fragment">Security and Privacy, </span>
-			  <span class="fragment">Validation, </span>
-			  <span class="fragment">Preprocessing, </span>
-			  <span class="fragment">Storage, </span>
-			  <span class="fragment">Data management, </span>
-			  <span class="fragment">Quality control, </span>
-			  <span class="fragment">Data sharing, </span>
-			  <span class="fragment">Download, </span>
-			  <span class="fragment">Image processing, </span>
-                          <span class="fragment">Statistical analysis </span>
-			  <span class="fragment">...and Paper writing! </span>
-			</p>
-			
-			<p><b><font color="blue"><span class="fragment">LORIS </span></font>
-			    <font color="green"><span class="fragment">CBRAIN </span></font></b>
-			  <font color="yellow"><span class="fragment">and more... </span></font>
-			</p>
-			
-			<!--Notes-->
-			<aside class="notes">
-			</aside>
-		     </section>	
-			<section>
-			  <h2>Data flow</h2>
-                          <img src="images/MNI_ecosystem.png">
-			</section>
+		 <span class="fragment"><a href="" target="_blank">Edinburgh BRAINS ImageBank, </a></span>
+                 <span class="fragment"><a href="http://coins.mrn.org" target="_blank">COINS, </a></span>
+		 <span class="fragment"><a href="http://www.xnat.org" target="_blank">XNAT, </a></span>
 		 
-		      
-              	      <section>		    
-		      <section>
-			<h2>BIC Imaging Database</h2>
-                        <img src="images/BIC_imaging_DB.png">
-                      </section>
+		 <span class="fragment"><a href="http://www.creatis.insa-lyon.fr/vip/" target="_blank">VIP, </a></span>
+		 <span class="fragment"><a href="https://www.braincode.ca" target="_blank">BrainCode, </a></span>
+		 <span class="fragment"><a href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank">BIDS, </a></span>
+		 <span class="fragment"><a href="http://www.cima-q.ca" target="_blank">NIDM, </a></span>
+		 <span class="fragment"><a href="http://www.neurodevnet.ca" target="_blank">NeuroDevNet, </a></span>
+		 <span class="fragment"><a href="http://gusto.sg/v2/index.php" target="_blank">GUSTO, </a></span>
+		 <span class="fragment"><a href="http://rpq-qpn.ca/en/" target="_blank">QPN, </a></span>
+		 <span class="fragment"><a href="http://www.neurobureau.org" target="_blank">Boutiques, </a></span>
+		  <span class="fragment"><a href="http://www.neurobureau.org" target="_blank">VIP </a></span>
+		 
+		 
+	       </p>
+	       
+	   </section>
 
-		      <section>	
-			<h2>BIC Clinical Database</h2>
-			<img src="images/Tara.jpg">
-                      </section>
-		    </section>
-
-		    <section>
-		      <section>
-			<h2>What is LORIS?</h2>
+	    <!-- Hackathons -->
+		    <section data-transition="fade">
 			<table class="reveal">
+			  <h2><a href="">Hackathons</a></h2>
 			  <tr>
-			    <td width="50%" style="vertical-align: middle">
-			      <img src="images/LORIS_logo.png">					   
-			      <p><small> “LORIS is a modular and extensible web-based data management system that integrates all aspects of a multi-center study: from heterogeneous data acquisition (imaging, clinical, behavior, genetics) to storage, processing and ultimately dissemination.”</small></p>
+			    <td width="75%" style="vertical-align: middle">
+			      <img src="images/C-BASE.png">
 			    </td>
-			    <td>
-			      <img src="images/LORIS_paper.png"> 
-			</td></tr></table>
-		      </section>
-		      
-		      <section>
-			<h2>What does LORIS do?</h2>
-			<img src="images/LORIS_functionality.png"> 
-                      </section>
-
-
-		     <section data-background="images/LORIS_full_functionality.png">
-                        <h1><font color="blue">What does LORIS actually do?</font></h1>
-		      </section> 
-		    
-		      <section>
-                        <h2>What can LORIS do for the BIC?</h2>
-                        <img src="images/LORIS_BIC.png">
-                      </section>
-		    </section>
-		     
-		    <section>
-		      <section data-background="images/LORIS_global.png">
-			<h1><font color ="blue">LORIS globally</font></h1>
-		      </section>
-		      
-		      <section>
-                        <img src="images/NIHPD_logo.jpg">
-			<table class="reveal">
-                          <tr>
-			    <td width="45%" style="vertical-align: middle">
-			      <img src="images/NIHPD_paper.png">
-			    </td>
-			    
-                            <td width="30%" style="vertical-align: middle">
-			      <img src="images/MRI_images_several.jpg">
-			    </td>
-			    <td width="30%" style="vertical-align: middle">
-			      <p><small>
-				  <ul>
-				    <li>8 year study</li>
-				    <li>Longitudinal data</li>
-				    <li>532 subjects</li>
-				    <li>8000 distinct variables</li>
-				    <li>37000 individual assessments</li>
-				    <li>T1, T2, PD, DTI</li>
-				    <li>Spectroscopy</li>
-				    <li>∼3TB of imaging data</li>
-				    <li>2000 MRI acquisitions</li>
-				  </ul>
-			      </small></p>
+			    <td width="25%" style="vertical-align: middle">
+			     <p> Important value of hackathons to data sharing initiatives</p>
+			     <img src="images/Brainhack.png">
 			    </td>
 			</tr></table>
 		      </section>
-		      
-		      <section>
-                        <img src="images/IBIS.png">
-                        <table class="reveal">
-                          <tr>
-                            <td width="45%" style="vertical-align: middle">
-                              <img src="images/IBIS_paper.png">
-                            </td>
-			    
-                            <td width="30%" style="vertical-align: middle">
-                              <img src="images/IBIS_image.png">
-                            </td>
-                            <td width="30%" style="vertical-align: middle">
-                              <p><small>
-                                  <ul>
-                                    <li>Infant brain development in autism</li>
-                                    <li>3000+ scans</li>
-                                    <li>700+ subjects</li>
-                                    <li>7000 distinct variables</li>
-                                    <li>150,000+ individual assessments</li>
-                                    <li>T1, T2, DTI, BOLD</li>
-                                    <li>∼5 TBs of imaging data</li>
-                                    <li>Genetic/biospecimen data</li>
-				  </ul>
-                              </small></p>
-                            </td>
-                        </tr></table>
-                      </section>
-
-		      
-		      <section>
-                        <table class="reveal">
-			  <h2>BigBrain</h2>
-                          <tr>
-			    <td width="50%" style="vertical-align: middle">
-                              <img src="images/BigBrain.png">
-			    </td>
-			    <td width="50%" style="vertical-align: middle">
-                              <img src="images/BigBrain_paper.png">
-			    </td>
-                        </tr></table>
-                      </section>
-		      
-		      <!--
-		      <section>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nJpFvQ0YZLk" frameborder="0" allowfullscreen></iframe>
-                      </section>
--->
-		      
-		      <section data-background-video="images/Bigbrain_low.mp4" data-background-color="#000000">
-			<p class="fragment current-visible"><font size="9" color="blue">BigBrain - high resolution reference brain</font></p>
-			<p class="fragment current-visible"><font size="9" color="blue">Multimodal integration into an anatomically realistic standard space</font></p>
-			<p class="fragment current-visible"><font size="9" color="blue">Years of development</font></p>
-			<p class="fragment current-visible"><font size="9" color="blue">20 micron resolution</font></p>
-			<p class="fragment current-visible"><font size="9" color="blue">7404 histological slices</font></p>
-			<p class="fragment current-visible"><font size="9" color="blue">1 Terabyte dataset</font></p>
-			<p class="fragment current-visible"><font size="9" color="blue">Available freely at https://bigbrain.loris.ca</font></p>	
-			
-		      </section>
-		    </section>
-		    
-		    <!-- LORIS core -->
-		    <section>
-		      <section>
-                        <h2>Login</h2>
-                        <a href="https://demo.loris.ca" target="_blank"><img src="images/LORIS_login.png"></a>
-                      </section>
-		      <section>
-                        <h2>Dashboard</h2>
-			<img src="images/Dashboard.png">
-		      </section>
-		      <section>
-                        <h2>Summary Statistics</h2>
-			<img src="images/Statistics_behavioural.png">
-                      </section>
-		      <section>
-			<h2>Permissions/User control</h2>
-                        <img src="images/Permissions.png">
-                      </section>
-		      <section>
-                        <h2>List of subjects</h2>
-                        <img src="images/Subject_list.png">
-		      </section>
-		      <section>
-			<h2>Timepoints</h2>
-                        <img src="images/Timepoint_list.png">
-                      </section>
-		      <section>
-                        <h2>Battery of Measures</h2>
-			<p><small><font color="yellow">For list of 400+ instruments: https://sites.google.com/site/lorisinstrumentlist</font></small>
-                          <img src="images/Battery.png">
-			</p>
-                      </section>
-		      <section>
-			<h2>Psychometric Subject Summary</h2>
-                        <img src="images/AOSI.png">
-                      </section>
-		        <section>
-			<h2>Psychometric Data Entry</h2>
-                        <img src="images/Psychometric2.png">
-                      </section>
-		      <section>
-			<h2>Survey Module</h2>
-                        <img src="images/Survey_module.png">
-                      </section>
-
-		    </section>
-		    
-                    <!-- Statistics
-		    <section>
-		      <section>
-			<h2>General Statistics</h2>
-			<img src="images/Statistics_general.png">
-		      </section>
-		     
-		       <section>
-                        <h2>Imaging Statistics</h2>
-			<img src="images/Statistics_imaging.png">
-                      </section>
-		    </section>
--->
-		    
-                    <!-- Imaging Browser -->
-		    <section>
-		      <section>
-			<h2>Imaging Browser</h2>
-			<img src="images/Imaging_menu.png">
-                      </section>
+	     
+	   </section>
+		
+	<!-- BIG BRAIN -->
+	<section>
+	<section>
+               <table class="reveal">
+                 <h2>BigBrain</h2>
+                 <tr>
+                   <td width="50%" style="vertical-align: middle">
+                     <a href="https://bigbrain.loris.ca/main.php" data-preview-link><img src="images/BigBrain.png"></a>
+                   </td>
+                   <td width="50%" style="vertical-align: middle">
+                     <img src="images/BigBrain_paper.png">
+                   </td>
+               </tr></table>
+     	</section>
+	<section data-background-video="images/Bigbrain_low.mp4" data-background-color="#000000">
+                          <p class="fragment current-visible"><font size="9" color="blue">BigBrain - high resolution reference brain</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">Multimodal integration into an anatomically realistic standard space</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">Years of development</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">20 micron resolution</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">7404 histological slices</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">1 Terabyte dataset</font></p>
+                          <p class="fragment current-visible"><font size="9" color="blue">Available freely at https://bigbrain.loris.ca</font></p>
+                        </section>
+	<section>
+		<a href="https://neuroglancer.humanbrainproject.org/#!{'layers':{' grey value: ':{'type':'image'_'source':'precomputed://https://neuroglancer.humanbrainproject.org/precomputed/BigBrainRelease.2015/8bit'_'transform':[[1_0_0_-70666600]_[0_1_0_-70000000]_[0_0_1_-58777700]_[0_0_0_1]]}_' tissue type: ':{'type':'segmentation'_'source':'precomputed://https://neuroglancer.humanbrainproject.org/precomputed/BigBrainRelease.2015/classif'_'selectedAlpha':0_'segments':['100'_'0']_'transform':[[1_0_0_-70666600]_[0_1_0_-72910000]_[0_0_1_-58777700]_[0_0_0_1]]}}_'navigation':{'pose':{'position':{'voxelSize':[21166.666015625_20000_21166.666015625]_'voxelCoordinates':[545.3997802734375_16.288618087768555_80.64189147949219]}}_'zoomFactor':520469.94104040385}_'perspectiveOrientation':[0.3140767216682434_-0.7418519854545593_0.4988985061645508_-0.3195493221282959]_'perspectiveZoom':1922235.5293810747}" data-preview-link><img src="images/bigbrain_shot.png"></a>
+	</section>	
+	</section>     
 	
-		      <section>
-                        <h2>Imaging Quality Control</h2>
-                        <img src="images/Imaging_scans.png">
-                      </section>
-		      <section>
-                        <h2>Visualization - <font color="yellow">BrainBrowser</font></h2>
-                        <img src="images/BrainBrowser_VolumeViewer.png">
-		      </section>
-		      <section>
-                        <h3>BrainBrowser - <font color ="green"> 3D Surface Viewer </font></h3>
-			<p><a href="https://brainbrowser.cbrain.mcgill.ca/surface-viewer#ct" target="_blank"><img src="images/BrainBrowser_SurfaceViewer.png"></a></p>
-                      </section>
-		      <section>
-                        <h2><font color ="red">Protocol Violations</font></h2>
-                        <img src="images/Violated_scans.png">
-                      </section>
-		      <section>
-			<table class="reveal">
-                          <h2>Radiological Review Module</h2>
-                          <tr>
-                            <td width="61%" style="vertical-align: middle">
-			      <img src="images/Radiological_review_menu.png">               
-                            </td>
-                            <td width="39%" style="vertical-align: middle">
-                              <img src="images/Radiological_review_form.png">
-                            </td>
-                        </tr></table>
-		      </section>				  
-		      <section>
-                        <h2>DICOM archives</h2>
-                        <img src="images/DICOM_archive.png">
-                      </section>
-		      <section>
-                        <h2>Imaging Uploader -<font color="red"> New</font></h2>
-                        <img src="images/Imaging_uploader.png">
-                      </section>
+	<!--Open Science-->
+	<section>    
+	 <section data-transition="convex">
+	       <h2>Open Science</h2>
+	       <table class="reveal">
+		 <tr>
+		   <td width="50%" style="vertical-align: middle">
+		     <img src="images/Nature_open_science.png"> 
+		   </td>
+		   <td>
+		     <img src="images/Open_science.png"> 
+	       </td></tr></table>	
+	     </section>
+	     
+	     <section>
+	       <h2>Open Science</h2>
+	       <img src="images/Open_science_paper.png" width="80%">
+	     </section>
+	     
+	     <section>
+	       <h2>Cyberinfrastructure</h2>
+	       <img src="images/Cyberinfrastructure.png">			
+	     </section>
+	     
+	     <section data-transition="concave">
+	       <h2>Open Science Functionality</h2>
+	       <table>
+		 <thead>
+		   <tr>
+		     <th><font color="yellow">Acquisition & Storage</font></th>
+		     <th><font color="yellow">Dissemination & Analysis</font></th>
+		   </tr>
+		 </thead>
+		 <tbody>
+		   <tr>
+		     <td><small>Organized/Accessible data</small></td>
+		     <td><small>Centralized repository</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Long term storage</small></td>
+		     <td><small>Provenance Capture</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Quality Control mechanisms</small></td>
+		     <td><small>API for interoperability</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Web visualization</small></td>
+		     <td><small>Consent is factored in</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Tablet/Mobile Friendly</small></td>
+		     <td><small>User account access control</small></td>
 
-		    </section>
-		    
-		    <!-- Data Querying Tool -->
-		    <section>
-		      <section>
-                        <h2>Data Dictionary Builder</h2>
-                        <img src="images/Data_dictionary.png">
-                      </section>
-		      <section>
-			<h2>Data Querying Tool</h2>
-			<img src="images/DQT_Define.png">
-		      </section>
-		      <section>
-                        <h2>Data Querying Tool - <font color="yellow"> Results</font></h2>
-                        <img src="images/DQT_Results.png">
-                      </section>
-		      <section>
-                        <h2>Data Querying Tool - <font color="yellow">Statistics</font></h2>
-                        <img src="images/DQT_Stats.png">
-                      </section>
-		    </section>
+		   </tr>
+		   <tr>
+		     <td><small>Anonymized automatically</small></td>
+		     <td><small>Completely de-identified</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Cross-modal linking</small></td>
+		     <td><small>Cross-study correlation</small></td>
+		   </tr>
+		   <tr>
+		     <td><small>Online Data Querying</small></td>
+		     <td><small>Access to high performance computing</small></td>
+		   </tr>
+		   
+		 </tbody>
+	       </table>
+	     </section>
+	     
+	   </section>
 
-		    <section>
-		     <section>
-		        <h2>Mobile <font color="yellow"> - Responsive layout</font></h2>
-			<img src="images/Mobile_responsive.png">
-                     </section>
-		      <section>
-		        <h2>Mobile <font color="yellow"> - Data entry</font></h2>
-			<img src="images/Mobile_data_entry.png">
-                      </section>
-		       <section>
-		        <h2>Mobile <font color="yellow"> - Imaging</font></h2>
-			<img src="images/Mobile_imaging.png">
-                      </section>
-		    </section>
-		    
-		    <section>
-		      <section>
-		        <h2>LORIS - Github <font color="yellow"> - Open Source</font></h2>
-			<img src="images/LORIS_Github.png">
-                      </section>
-		      
-		      <section>
-			<h2>LORIS - <font color="yellow">Requirements</font></h2>
-			<p class="fragment grow">Dedicated developer! (software is free of charge)</p>		
-			<p class="fragment roll-in">LINUX based server</p>
-			<p class="fragment roll-in">LAMP stack</p>
-			<p class="fragment roll-in">Perl and other peripheral libraries (i.e DCMTK)</p>
-			<p class="fragment roll-in">Beer for Samir</p>
-                      </section>
-		      <section>
-		        <h2>LORIS - <font color="blue"> Links</font></h2>
-			<p>Website: <a href="http:www.loris.ca" target="_blank"> www.loris.ca</a></p>
-			<p>Demo: <a href="https://demo.loris.ca" target="_blank"> https://demo.loris.ca</a></p>
-			<p>LORIS developers mailing list: <a href="mailto:loris-dev@bic.mni.mcgill.ca"> loris-dev@bic.mni.mcgill.ca</a></p>
-			<p>Source code: <a href="https://github.com/aces/Loris" target="_blank"> https://github.com/aces/Loris</a></p>
-			  
-			
-                      </section>
-		      
-		    </section>
-
-		    <!-- CBRAIN -->
-		    <section>
-		      <section>
-			<table class="reveal">
-                          <h2>CBRAIN</h2>
-                          <tr>
-                            <td width="50%" style="vertical-align: middle">
-                              <p><small><font color="yellow"> Web-based</font></small></p>
-			      <p><small><font color="yellow"> Collaborative research platform</font></small></p>
-			      <p><small><font color="yellow"> Access to remote sources</font></small></p>
-			      <p><small><font color="yellow"> Distributed high performance computing</font></small></p>
-			      <p><small><font color="yellow"> Processing and visualization tools</font></small></p>
-			      <p><small><font color="yellow"> Secure, controlled environment</font></small></p>
-			    </td>
-                            <td width="50%" style="vertical-align: middle">
-                              <img src="images/CBRAIN_paper.png">
-                            </td>
-                        </tr></table>
-		      </section>
-		      <section>
-		      <h2>CBRAIN - Functionality</h2>
-		      <p class="fragment roll-in">Non-expert users can easily leverage Compute Canada</p>
-		      	<p class="fragment roll-in">Anyone can request an account (best effort support):<br> <a href="mailto:cbrain-support.mni@mcgill.ca">cbrain-support.mni@mcgill.ca</a> </p>
-		      <p class="fragment roll-in">CBRAIN code is now public: <a href="https://github.com/aces/cbrain" target="blank">https://github.com/aces/cbrain</a> </p>
-		      <p class="fragment roll-in">Includes several structural and functional MRI tools</p>
-		      <p class="fragment roll-in">Continued integration of new tools as per community needs</p>
-
-		      
-		      </section>
-		     
-		      <section>
-                         <h2>CBRAIN - Tools</h2>
-			 <p align="left"><font color="yellow"> Conversion tools:</font></p>
-			  <p align="left">MINC &harr; NIfTI, DICOM &rarr; MINC, DICOM &rarr; NIfTI, Analyze &rarr;  HRRT, ASPIRO &rarr; MINC, DICOM &rarr; HRRT, MINC1 &harr; MINC2</p>
-			 <p align="left"align="left"><font color="yellow">Image Processing tools:</font>
-			   <ul>
-			   <li> Civet, CivetCombiner & CivetQC</li>
-			   <li> FSL: bedpostx, bet, fast, feat, first flirt, melodic, probtrackx</li>
-			   <li> FreeSurfer: recon-all, and recon-all longitudinal</li>
-			   <li> NIAK</li>
-			   <li> Several other project specific tools</li>
-			   </ul>
-                       </section>
-		    
-		    <!-- CIVET: Corticometric Iterative Vertex-based Estimations of Topology -->
-                    <section>
-                      <table class="reveal">
-                          <h2>CIVET</h2>
-                          <tr>
-                            <td width="50%" style="vertical-align: middle">
-                              <p><small>The CIVET project was initiated in order to create an automated, easy-to-use human brain-imaging pipeline that makes use of state-of-the-art software tools developed by researchers at the BIC for the fully-automated processing and analysis of large MR data sets, including the extraction and analysis of cortical surfaces from MR images, as well as many other volumetric and corticometric functions.</small></p>
-			      <img src="images/CIVET.png">
-                            </td>
-                            <td width="50%" style="vertical-align: top">
-                              <p class="fragment roll-in"><font color="blue">Fully automated anatomical pipeline</font></p>
-			      <p class="fragment roll-in"><font color="blue">Parallel processing</p>
-			      <p class="fragment roll-in"><font color="blue">Can handle large datasets</p>
-			      <p class="fragment roll-in"><font color="blue">Includes QC mechanisms</p>
-			      <p class="fragment roll-in"><font color="blue">>10 yrs active development</p>
-			      <p class="fragment roll-in"><font color="blue">Publication in process</p>
-                            </td>
-                        </tr></table>
-                      </section>
-		      <section>
-                        <table class="reveal">
-                          <h2>CIVET - Processing steps</h2>
-                          <tr>
-                            <td>
-			      <img src="images/CIVET_processing_steps.png">      
-                            </td>
-                        </tr></table>
-                      </section>
-		     <section>
-                        <table class="reveal">
-                          <h2>CIVET - Pipeline schema</h2>
-                          <tr>
-                            <td>
-			      <img src="images/CIVET_steps.png">      
-                            </td>
-			      <td style="vertical-align: top">
-				<img src="images/CIVET_surface.png">
-				<img src="images/CIVET_segmentation.png">      
-                            </td>
-                        </tr></table>
-                     </section>
-		     
-		    <section>
-                        <h2>fMRI Pipeline - <font color ="red"> NIAK</font></h2>
-			<table class="reveal">
-                          <tr>
-                            <td width="78%" style="vertical-align: middle">
-                              <img src="images/NIAK.jpg">
-			    </td>
-                            <td width="22%" style="vertical-align: middle">
-                              <img src="images/Bellec.png">
-			      <p class="fragment roll-in">My name is Pierre Bellec...</p>
-			      	<p class="fragment roll-in">... and I love fruit!</p>
-                            </td>
-                        </tr></table>
-                      </section>
-
-		     <section>
-			<h2>CBRAIN portal</h2>
-			<img src="images/CBRAIN_portal.png">						
-		      </section>
-		      <section>
-                        <h2>CBRAIN projects</h2>
-			<img src="images/CBRAIN_mainpage.png">
-                      </section>
-		      <section>
-                        <h2>CBRAIN tasks</h2>
-                        <img src="images/CBRAIN_tasks.png">
-                      </section>
-		      <section>
-                        <img src="images/CBRAIN_schema.png">
-                      </section>
-		        <section>
-			<img src="images/CBRAIN_distribution.png">
-		      </section>
-		      <section>
-                      	<img src="images/CBRAIN_hours.png">
-		      </section>
-		    </section>
-		    <!-- MINC -->
-                    <section>
-                      <section>
-                        <table class="reveal">
-                          <h2>MINC</h2>
-                          <tr>
-			    <td width="60%" style="vertical-align: middle">
-                              <img src="images/MINC.png">
-                            </td>
-                            <td width="40%" style="vertical-align: middle">
-                              <p><small>The MINC file format and toolbox was originally conceived, written and released by Peter Neelin in 1992.</small></p>			  
-                            </td>
-                        </tr></table>
-                      </section>
-
-		      <section>
-                        <h2>Install MINC - BIC systems</h2>
-			<p class="fragment roll-in">By default binaries are available at <font color="green"> /usr/local/mni </font></p>
-			<p class="fragment roll-in">Better to use  <font color="green"> /usr/local/bic</font></p>	
-			<p class="fragment roll-in">A much more up-to-date version is installed in  <font color="green"> /ipl/quarantine/std/x86_64/1.0 </font></p>
-			<p class="fragment roll-in">To execute: <font color="green"> source /ipl/quarantine/std/x86_64/1.0/init.csh</font></p>
-		      </section>
-		      
-		      <section>
-			<h2>Install MINC - Personal computers</h2>
-			<p class="fragment roll-in">For personal computers (incl. Macs): <a href ="https://www.mcgill.ca/bic/resources/minc/minctoolkit">https://www.mcgill.ca/bic/resources/minc/minctoolkit</a> </p>
-			<p class="fragment roll-in">Two versions are mentioned: 1.0 and 1.9.2: install 1.0 version, which includes all the standard MINC tools with support for MINC2.</p>
-			<p class="fragment roll-in">Main difference: ITK-based software is also included. </p>	
-<!--
-			<p class="fragment roll-in">Version 1.0 uses ITK 3.20 and contains mincANTS + some of Vlad's tools that use ITK 1.9.xx contains ITK 4.7 and includes ANTS, Elastix and ABC - but most people don’t need that. </p>
--->
-		      </section>
-		      
-		      <section>
-                        <h2>MINC resources</h2>
-			<ul><small>
-			  <li>minc-users mailing list: <br> <a href="http://www.bic.mni.mcgill.ca/mailman/listinfo/minc-users">http://www.bic.mni.mcgill.ca/mailman/listinfo/minc-users</a></li> <br>
-			  <li>Current documention on wikibooks: <br> <a href="http://en.wikibooks.org/wiki/MINC">http://en.wikibooks.org/wiki/MINC</a></li> <br>
-			  <li>Current combined release:  <br><a href="http://www.bic.mni.mcgill.ca/ServicesSoftware/ServicesSoftwareMincToolKit">http://www.bic.mni.mcgill.ca/ServicesSoftware/ServicesSoftwareMincToolKit</a></li> <br>
-			 <li>Github (for bug report and source code) <br><a href="https://github.com/BIC-MNI/minc-toolkit/">https://github.com/BIC-MNI/minc-toolkit/</a></li> <br>
-			</small></ul>
-		      </section>
-                    </section>
-
-		    <section data-transition="slide" data-background="#87CEEB" data-background-transition="zoom">
-		      <img src="images/Royal_vic.png">
-			<h4>Acknowledgments</h4>
-			<p><small><font color="black">Alan Evans, Alex Zijdenbos, Reza Adalat, Penelope Kostopoulos, Louis Collins, Vladimir Fonov, Marc Rousseau, Tarek Sherif, Pierre Rioux, Nic Kassis, Leigh MacIntyre, Claude Lepage, Ilana Leppert, Carolina Makowski, Natasha Beck, Tristan Glatard, Bert Vincent, Lindsay Lewis, Guiomar Niso, Elodie Portales-Casamar, Jeremy Moreau, Athena Buckthought, Alden Woodward, Reuka Giles, Kelvin Mok, Sylvain Milot, Jean Francois Malouin & Sylvain Baillet</font></small></p>
-			<p><small> <font color="white">LORIS Developers: </font><font color="black"> Dario Vins, Jonathan Harlap, Matt Charlet, Andrew Corderey, Sebastien Muehlboeck, David Brownlee, Zia Mohaddes, David MacFarlane, Cecile Madjar, Mia Petkova, Christine Rogers, Rathi Gnanasekeran, Justin Kat, Nicolas Brossard, Tara Campbell, Jordan Stirling, Daniel Kroetz, Ted Strauss, Young-vin Nah, Shipra Agarwal, Pierre-Emmaunel, Martin Weiss, Ayan Sengupta, Olga Tsibulevskaya, Nicolas St. George, Justin Leong, Mathieu Desrosiers & Tom Beaudry </font></small> </p>
-                      </section>
-		     </section>
-
-<!--
-    <section>
-      <section id="fragments">
-	<h2>Fragments</h2>
-	<p>Hit the next arrow...</p>
-	<p class="fragment">... to step through ...</p>
-	<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+	   <!--Actual Science-->
+	   <section>
+	       <h2>Actual Science</h2>
+	       <img src="images/ESM.png">
+	     </section>
+	   
+	   <!--National Infrastructure-->
+	    <section data-transition="convex">
+	       <h2>National Network</h2>
+	       <table class="reveal">
+		 <tr>
+		   <td width="50%" style="vertical-align: middle">
+		     <img src="images/Networks.png"> 
+		   </td>
+		   <td>
+		     <img src="images/Open_science_national.png"> 
+	       </td></tr></table>
+	       <p>Including "Data Publishing"</p>
+	     </section>
+	   
+	   <!--International-->
+	   <section>
+	     <img src="images/International.png">
+	   </section>
+<section>
+                        <h2>Future Direction</h2>
+                        <ul>
+                              <li>Phase 2 LORIS/CBRAIN connectivity</li>
+                              <li>Enhanced API</li>
+                              <li>Additional modalities (eg. MEG/EEG)</li>
+                              <li>Institutional requirements</li>
+                              <li>Enhanced visualization</li>
+                              <li>Numerous new modules</li>
+                              <li>Biobanking Tracking</li>
+                         </ul>
+                      </section>	   
+	   
+	   <!--Acknowledgements-->
+	   <section data-transition="slide" data-background="#87CEEB" data-background-transition="zoom">
+	     <img src="images/Royal_vic.png">
+	     <h4>Acknowledgments</h4>
+	     <p><small><font color="black">Alan Evans, Alex Zijdenbos, Reza Adalat, Penelope Kostopoulos, Louis Collins, Vladimir Fonov, Marc Rousseau, Tarek Sherif, Pierre Rioux, Nic Kassis, Leigh MacIntyre, Claude Lepage, Ilana Leppert, Carolina Makowski, Natasha Beck, Tristan Glatard, Bert Vincent, Lindsay Lewis, Alden Woodward, Sylvain Milot, Jean Francois Malouin</font></small></p>
+	     <p><small> <font color="white">LORIS Developers: </font><font color="black"> Dario Vins, Jonathan Harlap, Matt Charlet, Andrew Corderey, Sebastien Muehlboeck, David Brownlee, Zia Mohades, David MacFarlane, Cecile Madjar, Mia Petkova, Christine Rogers, Rathi Gnanasekeran, Justin Kat, Nicolas Brossard, Tara Campbell, Jordan Stirling, Mouna Safi-Harab, Greg Luneau, Rida Abou-Haidar, Daniel Kroetz, Pierre-Emmaunel, Tom Beaudry, Shen Wang, John Saigle, Sanitago Paiva & Surthy Matthews</font></small> </p>
+	   </section>
 	
-	<aside class="notes">
-	  This slide has fragments which are also stepped through in the notes window.
-	</aside>
-      </section>
-      <section>
-	<h2>Fragment Styles</h2>
-	<p>There's different types of fragments, like:</p>
-	<p class="fragment grow">grow</p>
-	<p class="fragment shrink">shrink</p>
-	<p class="fragment roll-in">roll-in</p>
-	<p class="fragment fade-out">fade-out</p>
-	<p class="fragment current-visible">current-visible</p>
-	<p class="fragment highlight-red">highlight-red</p>
-	<p class="fragment highlight-blue">highlight-blue</p>
-      </section>
-    </section>
+	   
+	   
+      </div>
+      
+    </div>
+		
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
     
-    <section id="transitions">
-      <h2>Transition Styles</h2>
-      <p>
-	You can select from different transitions, like: <br>
-	<a href="?transition=none#/transitions">None</a> -
-	<a href="?transition=fade#/transitions">Fade</a> -
-	<a href="?transition=slide#/transitions">Slide</a> -
-	<a href="?transition=convex#/transitions">Convex</a> -
-	<a href="?transition=concave#/transitions">Concave</a> -
-	<a href="?transition=zoom#/transitions">Zoom</a>
-      </p>
-    </section>
-    
-    -->
-
-</div>
-
-</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
+    <script>
+      
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins
